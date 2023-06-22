@@ -13,10 +13,25 @@ module.exports = {
         }
       },
       fontFamily: {
-        main: ["游ゴシック","Yu Gothic"]
-      }
+        main: ["游ゴシック","Yu Gothic"],
+        sub:['"Source Serif 4"','serif']
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        ".text-shadow": {
+          textShadow: "0px 2px 3px darkgrey"
+        },
+        ".text-shadow-md": {
+          textShadow: "0px 3px 3px darkgrey"
+        },
+        ".text-shadow-lg": {
+          textShadow: "0px 5px 3px darkgrey"
+        },
+    };
+    addUtilities(newUtilities);
+  }
+  ],
 }
-
