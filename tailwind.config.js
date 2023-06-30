@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         main: {
           500: '#333',
-        }
+          600: '#E41B15',
+        },
       },
       fontFamily: {
         main: ["游ゴシック","Yu Gothic"],

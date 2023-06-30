@@ -41,6 +41,27 @@
 
             <section>
                 <x-section titleEn="Members" title="メンバー"/>
+
+                <div class="mt-4">
+                    <img src="{{asset('/images/peaple.jpg')}}" alt="">
+                </div>
+
+                <x-elements.button class="mt-6"/>
+            </section>
+
+            <section class="mb-96 mt-32">
+                <x-css.back-red>
+                    <div class="flex justify-center">
+                        <div class="w-10/12 text-white mt-8">
+                            <h2 class="text-sm">お問い合わせ</h2>
+                            <div class="flex justify-between items-center">
+                                <h2 class="font-sub text-xl">Contact</h2>
+                                <div class="w-3/4 border-t border-white">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </x-css.back-red>
             </section>
 
         </div>
