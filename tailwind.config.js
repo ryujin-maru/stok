@@ -22,6 +22,9 @@ module.exports = {
   plugins: [
     function({ addUtilities }) {
       const newUtilities = {
+        ".text-shadow-sm": {
+          textShadow: "0px 1px 3px darkgrey"
+        },
         ".text-shadow": {
           textShadow: "0px 2px 3px darkgrey"
         },

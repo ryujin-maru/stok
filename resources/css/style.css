@@ -1,0 +1,38 @@
+.bstok {
+    margin: 0 calc(50% - 50vw);
+    position: relative;
+    z-index: 11;
+}
+
+.bstok::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #E41B15;
+    transform: skewY(10deg);
+    z-index: -1;
+    width: 0px;
+    transition: all .3s;
+}
+
+.bstok.action::before {
+    width: 100%;
+}
+
+
+
+#top {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color:rgba(255,255,255,0.9);
+    background-blend-mode:lighten;
+    background-position: 0px 50%;
+    background-image: url('../../public/images/favicon.png');
+}
+
+.c-right {
+    background-color: white;
+}

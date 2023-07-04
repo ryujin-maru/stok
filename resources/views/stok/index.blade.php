@@ -1,5 +1,4 @@
 <x-layout title="Home">
-    <x-css.top-image />
     <div id="header">
         <div id="top" style="z-index:-1;" class="h-screen w-full fixed top-0">
         </div>
@@ -13,25 +12,25 @@
     </div>
 
 
-    <div id="container" class="flex justify-center pt-20 bg-white mb-40">
+    <div id="container" class="flex justify-center pt-20 bg-white">
         <div class="w-10/12">
             <section>
                 <x-section titleEn="Products" title="事業紹介"/>
 
                 <div class="mt-8 relative">
-                    <img class="w-3/4" src="{{asset("images/test.jpg")}}"/>
-                    <div class="absolute border-t border-b bg-white top-14 left-10 w-11/12  p-2">
-                        <h3 class="font-bold mb-2">なんか事業</h3>
-                        <p class="leading-7 font-medium">ここに事業紹介の一つ目を書きます。何書こうかなマヨマヨ。あと少しなんか書かないと練習にならないからなーなんかない？</p>
+                    <img class="w-3/4 shado-md" src="{{asset("images/audience.jpg")}}"/>
+                    <div class="absolute bg-white top-14 left-10 w-11/12 p-2 shadow-md">
+                        <h3 class="font-bold mb-2 mt-2 text-shadow-sm">なんか事業</h3>
+                        <p class="text-shadow-sm">ここに事業紹介の一つ目を書きます。何書こうかなマヨマヨ。あと少しなんか書かないと練習にならないからなーなんかない？</p>
                     </div>
                 </div>
 
                 <div class="mt-32 relative flex justify-end">
                     <div class="w-3/4">
-                        <img class="" src="{{asset("images/test.jpg")}}"/>
-                        <div class="absolute border-t border-b bg-white top-14 right-10 w-11/12 p-2">
-                            <h3 class="font-bold mb-2">なんか事業</h3>
-                            <p>ここに事業紹介の一つ目を書きます。何書こうかなマヨマヨ。あと少しなんか書かないと練習にならないからなーなんかない？</p>
+                        <img class="" src="{{asset("images/business.jpg")}}"/>
+                        <div class="absolute shadow-md bg-white top-14 right-10 w-11/12 p-2">
+                            <h3 class="font-bold mb-2 mt-2 text-shadow-sm">なんか事業</h3>
+                            <p class="text-shadow-sm">ここに事業紹介の一つ目を書きます。何書こうかなマヨマヨ。あと少しなんか書かないと練習にならないからなーなんかない？</p>
                         </div>
                     </div>
                 </div>
@@ -49,7 +48,7 @@
                 <x-elements.button class="mt-6"/>
             </section>
 
-            <section class="mb-96 mt-32">
+            <section class="mb-16 mt-32">
                 <x-css.back-red>
                     <div class="flex justify-center">
                         <div class="w-10/12 text-white mt-8">
@@ -59,18 +58,31 @@
                                 <div class="w-3/4 border-t border-white">
                                 </div>
                             </div>
+                            <p class="mt-8">ここに問い合わせをお願いします。働ける人募集しています。奴隷のように働けるような熱量を持った人がいいな。</p>
+                            <x-elements.button class="mt-10"/>
                         </div>
                     </div>
                 </x-css.back-red>
             </section>
 
+            <section class="mb-20">
+                <x-section titleEn="Company" title="会社概要"/>
+                <p class="mt-8">ここに適当な会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p>
+                <x-elements.button class="mt-10"/>
+            </section>
+
         </div>
     </div>
+    <x-footer />
+
 
 <script>
     $(function() {
         // var winHeight = $(window).height();
         // $('#container').css('margin-top',`${winHeight}px`);
+        setInterval(() => {
+            $('.bstok').addClass('action');
+        }, 1000);
     })
 </script>
 </x-layout>
