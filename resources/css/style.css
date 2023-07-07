@@ -1,3 +1,8 @@
+.target.action {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .bstok {
     margin: 0 calc(50% - 50vw);
     position: relative;
@@ -15,14 +20,12 @@
     transform: skewY(10deg);
     z-index: -1;
     width: 0px;
-    transition: all .3s;
+    transition: all .5s;
 }
 
 .bstok.action::before {
     width: 100%;
 }
-
-
 
 #top {
     background-repeat: no-repeat;

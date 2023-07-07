@@ -4,7 +4,7 @@
         </div>
 
         <div class="h-screen relative">
-            <div class="absolute bottom-1/4 left-8 pr-4">
+            <div class="absolute bottom-1/4 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000">
                 <h1 class="tracking-wide mb-4 text-lg text-shadow">そこに愛はあるんか</h1>
                 <p class="tracking-wide text-shadow">ここに説明文を追加します。長くてもいいようにレイアウトを設定します。</p>
             </div>
@@ -19,7 +19,7 @@
 
                 <div class="mt-8 relative">
                     <img class="w-3/4 shado-md" src="{{asset("images/audience.jpg")}}"/>
-                    <div class="absolute bg-white top-14 left-10 w-11/12 p-2 shadow-md">
+                    <div class="absolute bg-white top-14 left-10 w-11/12 p-2 shadow-md target opacity-0 translate-y-5 transition-all duration-1000">
                         <h3 class="font-bold mb-2 mt-2 text-shadow-sm">なんか事業</h3>
                         <p class="text-shadow-sm">ここに事業紹介の一つ目を書きます。何書こうかなマヨマヨ。あと少しなんか書かないと練習にならないからなーなんかない？</p>
                     </div>
@@ -28,7 +28,7 @@
                 <div class="mt-32 relative flex justify-end">
                     <div class="w-3/4">
                         <img class="" src="{{asset("images/business.jpg")}}"/>
-                        <div class="absolute shadow-md bg-white top-14 right-10 w-11/12 p-2">
+                        <div class="absolute shadow-md bg-white top-14 right-10 w-11/12 p-2 target opacity-0 translate-y-5 transition-all duration-1000">
                             <h3 class="font-bold mb-2 mt-2 text-shadow-sm">なんか事業</h3>
                             <p class="text-shadow-sm">ここに事業紹介の一つ目を書きます。何書こうかなマヨマヨ。あと少しなんか書かないと練習にならないからなーなんかない？</p>
                         </div>
@@ -77,12 +77,23 @@
 
 
 <script>
-    $(function() {
-        // var winHeight = $(window).height();
-        // $('#container').css('margin-top',`${winHeight}px`);
-        setInterval(() => {
-            $('.bstok').addClass('action');
-        }, 1000);
+    const targets = document.querySelectorAll('.target');
+    const options = {
+        root:null,
+        rootMargin:'0px',
+        threshold: '0.8',
+    }
+    const observer = new IntersectionObserver(intersect,options);
+    targets.forEach(target =>  {
+        observer.observe(target);
     })
+    function intersect(entries) {
+        entries.forEach(entry => { 
+            if(entry.isIntersecting) {
+                $(entry.target).addClass('action');
+                observer.unobserve(entry.target);
+            }
+        });
+    }
 </script>
 </x-layout>
