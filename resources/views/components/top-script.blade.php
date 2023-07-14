@@ -19,4 +19,13 @@
             }
         });
     }
+
+    // herderのlist表示
+    $('.nav li').each(function(i) {
+        setTimeout(() => {
+            $(this).addClass('set');
+        }, 100 * i);
+    });
+
+
 </script>
