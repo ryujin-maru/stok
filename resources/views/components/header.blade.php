@@ -1,5 +1,16 @@
-<div class="fixed top-0 w-full bg-black z-50">
-    <div class="w-6 float-right mt-4 mr-6">
+
+<header class="w-full fixed top-0 flex justify-between items-center pt-4 px-4 z-50">
+    <div class="w-28 cursor-pointer sm:ml-8">
+        <img src="{{asset('images/logoname.png')}}" alt="logo" />
+    </div>
+
+    <div class="w-6 cursor-pointer sm:mr-8 hum">
+        <img src="{{asset('icon/menu.png')}}" alt="menu" />
+    </div>
+</header>
+
+<div class="fixed top-0 w-full bg-black z-50 hidden menu">
+    <div class="w-5 float-right mt-4 mr-6 batu">
         <img src="{{asset('icon/batu.png')}}" alt="close" />
     </div>
     <nav class="w-full flex justify-center">
@@ -12,13 +23,3 @@
         </ul>
     </nav>
 </div> 
-
-<header class="w-full fixed top-0 flex justify-between items-center pt-4 px-4 z-50 hidden">
-    <div class="w-28 cursor-pointer sm:ml-8">
-        <img src="{{asset('images/logoname.png')}}" alt="logo" />
-    </div>
-
-    <div class="w-6 cursor-pointer sm:mr-8">
-        <img src="{{asset('icon/menu.png')}}" alt="menu" />
-    </div>
-</header>

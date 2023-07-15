@@ -8,6 +8,7 @@
                 <h1 class="tracking-widest mb-4 text-xl text-shadow">そこに愛はあるんか・・・</h1>
                 <p class="tracking-wide text-shadow font-sub">Is there love there</p>
             </div>
+            <div class="scrolldown2 font-sub"><span>scroll</span></div>
         </div>
     </div>
 

@@ -20,12 +20,23 @@
         });
     }
 
+    // クリックメニュー
+    $('.batu').click(function() {
+        $('.menu').slideUp();
+
+        $('.nav li').each(function(i) {
+            $(this).removeClass('set');
+        })
+    });
+
+    $('.hum').click(function() {
+        $('.menu').slideDown();
+
     // herderのlist表示
     $('.nav li').each(function(i) {
         setTimeout(() => {
             $(this).addClass('set');
         }, 100 * i);
     });
-
-
+    })
 </script>
