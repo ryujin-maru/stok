@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,4 @@ Route::get('/', function () {
     return view('stok.index');
 })->name('stok.index');
 
+Route::get('/contact',[MailController::class,'show'])->name('stok.contact');

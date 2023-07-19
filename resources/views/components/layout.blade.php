@@ -13,5 +13,6 @@
 <body class="font-main text-main-500">
     <x-header />
     {{$slot}}
+    <x-footer />
 </body>
 </html>

@@ -1,11 +1,25 @@
 
-<header class="w-full fixed top-0 flex justify-between items-center pt-4 px-4 z-50">
+<header class="w-full fixed top-0 flex justify-between items-center pt-4 px-4 z-50 sm:items-end">
     <div class="w-28 cursor-pointer sm:ml-8">
         <img src="{{asset('images/logoname.png')}}" alt="logo" />
     </div>
 
-    <div class="w-6 cursor-pointer sm:mr-8 hum">
+    <div class="w-6 cursor-pointer sm:mr-8 hum sm:hidden">
         <img src="{{asset('icon/menu.png')}}" alt="menu" />
+    </div>
+
+    <div class="hidden sm:block">
+        <div>
+            <nav class="w-full flex justify-center">
+                <ul class="font-sub text-black flex nav">
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">HOME</li>
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">PRODUCTS</li>
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">MEMBERS</li>
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">CONTACT</li>
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">COMPANY</li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 

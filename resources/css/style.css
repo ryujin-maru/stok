@@ -5,6 +5,15 @@ lg(min-width: 1024px)
 xl(min-width: 1280px)
 */
 
+@font-face {
+    font-family: blueSpring;
+    src: url('../../public/fonts/えり字.otf') format("truetype");
+}
+
+.test {
+    font-family: blueSpring;
+}
+
 .target.action {
     transform: translateY(0);
     opacity: 1;
@@ -129,5 +138,15 @@ xl(min-width: 1280px)
 
     .sec1 {
         position:initial;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    #top {
+        background-size: 40% auto;
+    }
+
+    .bstok {
+        height: 500px;
     }
 }

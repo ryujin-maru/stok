@@ -15,7 +15,8 @@ module.exports = {
       },
       fontFamily: {
         main: ["游ゴシック","Yu Gothic"],
-        sub:['"Source Serif 4"','serif']
+        sub:['"Source Serif 4"','serif'],
+        rare:["blueSpring","游ゴシック","Yu Gothic"]
       },
     },
   },
