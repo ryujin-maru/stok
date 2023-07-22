@@ -10,6 +10,12 @@ xl(min-width: 1280px)
     src: url('../../public/fonts/えり字.otf') format("truetype");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+.ii {
+    font-family: 'Shippori Mincho', serif;
+}
+
 .test {
     font-family: blueSpring;
 }
@@ -103,6 +109,7 @@ xl(min-width: 1280px)
     circlemove 1.6s ease-in-out infinite,
     cirlemovehide 1.6s ease-out infinite;
 }
+
 
 @keyframes circlemove{
     0%{bottom:75px;}

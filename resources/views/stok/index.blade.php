@@ -19,19 +19,21 @@
                 <x-section titleEn="Products" title="事業紹介"/>
 
                 <div class="mt-8 relative sm:flex">
-                    <img class="w-3/4 shadow-md sm:w-1/2" src="{{asset("images/audience.jpg")}}"/>
-                    <div class="sec1 bg-white top-14 left-10 w-11/12 p-2 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none">
-                        <h3 class="font-bold mb-2 mt-2 text-shadow-sm">なんか事業</h3>
-                        <p class="text-shadow-sm">ここに事業紹介の一つ目を書きます。何書こうかなマヨマヨ。あと少しなんか書かないと練習にならないからなーなんかない？</p>
+                    <img class="w-11/12 shadow-md sm:w-1/2" src="{{asset("images/audience.jpg")}}"/>
+                    <div class="sec1 bg-white top-14 left-10 w-11/12 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
+                        <p class="text-sm pt-2">01.電気通信事業</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">VextMinter</h3>
+                        <p class="text-sm">各企業のノウハウを盗んで生かす。<br>人を使った実績で導く。</p>
                     </div>
                 </div>
 
                 <div class="mt-32 sm:mt-10 relative flex justify-end sm:justify-center">
-                    <div class="w-3/4 sm:flex sm:flex-row-reverse sm:w-full">
+                    <div class="w-11/12 sm:flex sm:flex-row-reverse sm:w-full">
                         <img class="sm:w-1/2" src="{{asset("images/business.jpg")}}"/>
-                        <div class="sec1 shadow-md bg-white top-14 right-10 w-11/12 p-2 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none">
-                            <h3 class="font-bold mb-2 mt-2 text-shadow-sm">なんか事業</h3>
-                            <p class="text-shadow-sm">ここに事業紹介の一つ目を書きます。何書こうかなマヨマヨ。あと少しなんか書かないと練習にならないからなーなんかない？</p>
+                        <div class="sec1 shadow-md bg-white top-14 right-10 w-11/12 p-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
+                            <p class="text-sm pt-2">02.人材派遣業</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">VextMinter</h3>
+                        <p class="text-sm">各企業のノウハウを盗んで生かす。<br>人を使った実績で導く。</p>
                         </div>
                     </div>
                 </div>
