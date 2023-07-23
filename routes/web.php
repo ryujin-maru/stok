@@ -19,3 +19,4 @@ Route::get('/', function () {
 })->name('stok.index');
 
 Route::get('/contact',[MailController::class,'show'])->name('stok.contact');
+Route::post('/contact/send',[MailController::class,'sendMail'])->name('stok.send');
