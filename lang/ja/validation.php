@@ -3,6 +3,12 @@
 declare(strict_types=1);
 
 return [
+    'attributes' =>[
+        'name' => '氏名',
+        'mail' => 'メールアドレス',
+        'phone' => '電話番号',
+        'text' => 'お問い合わせ内容'
+    ],
     'accepted'             => ':Attributeを承認してください。',
     'accepted_if'          => ':Otherが:valueの場合、:attributeを承認する必要があります。',
     'active_url'           => ':Attributeは、有効なURLではありません。',

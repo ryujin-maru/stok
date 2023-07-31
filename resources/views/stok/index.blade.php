@@ -77,6 +77,4 @@
         </div>
     </div>
     {{-- <x-footer /> --}}
-
-<x-top-script />
 </x-layout>

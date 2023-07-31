@@ -18,5 +18,9 @@ Route::get('/', function () {
     return view('stok.index');
 })->name('stok.index');
 
+Route::get('/company', function () {
+    return view('stok.company');
+})->name('stok.company');
+
 Route::get('/contact',[MailController::class,'show'])->name('stok.contact');
 Route::post('/contact/send',[MailController::class,'sendMail'])->name('stok.send');

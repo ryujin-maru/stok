@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SendMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class MailController extends Controller
 {
@@ -11,11 +13,17 @@ class MailController extends Controller
     }
 
     public function sendMail(Request $request) {
-        $request->validate([
+        $data = $request->validate([
             'name' => 'required|string|max:20',
-            'mail' => 'required',
-            'phone' => 'required|nullable|regex:/^0(\d-?\d{4}|\d{2}-?\d{3}|\d{3}-?\d{2}|\d{4}-?\d|\d0-?\d{4})-?\d{4}$/',
+            'mail' => 'required|email',
+            'phone' => 'required|nullable|max:10|min:7|regex:/^[0-9-]+$/',
             'text' => 'required|max:2000'
-        ]);
+        ],
+        [
+            'phone.regex' => '電話番号の形式で入力してください'
+        ]
+    );
+
+        Mail::to('juktwmh@gmail.com')->send(new SendMail($data));
     }
 }
