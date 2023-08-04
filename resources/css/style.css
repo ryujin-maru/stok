@@ -110,6 +110,9 @@ xl(min-width: 1280px)
     cirlemovehide 1.6s ease-out infinite;
 }
 
+.btn {
+    background-color: #E41B15;
+}
 
 @keyframes circlemove{
     0%{bottom:75px;}
