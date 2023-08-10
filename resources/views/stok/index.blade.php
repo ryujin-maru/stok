@@ -4,9 +4,9 @@
         </div>
 
         <div class="h-screen relative">
-            <div class="absolute bottom-1/4 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60">
-                <h1 class="font-rare tracking-widest mb-4 text-xl text-shadow">そこに愛はあるんか・・・</h1>
-                <p class="tracking-wide text-shadow font-rare">Is there love there</p>
+            <div class="absolute bottom-1/3 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60">
+                <h1 class="font-rare tracking-widest mb-4 text-3xl sm:text-5xl text-shadow">そこに愛はあるんか・・・</h1>
+                <p class="tracking-wide text-shadow font-rare text-2xl sm:text-4xl">Is there love there</p>
             </div>
             <div class="scrolldown2 font-sub"><span>scroll</span></div>
         </div>
@@ -77,4 +77,20 @@
         </div>
     </div>
     {{-- <x-footer /> --}}
+<script>
+$(function () {
+  // スクロールを開始したら
+    $(window).on("scroll", function () {
+    // ファーストビューの高さを取得
+    mvHeight = $("#header").height();
+    if ($(window).scrollTop() > mvHeight) {
+      // スクロールの位置がファーストビューより下の場合にclassを付与
+        $(".hd").css('background-color','white');
+    } else {
+      // スクロールの位置がファーストビューより上の場合にclassを外す
+      $(".hd").css('background-color','initial');
+    }
+    });
+});
+</script>
 </x-layout>

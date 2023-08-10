@@ -51,11 +51,11 @@ xl(min-width: 1280px)
 
 #top {
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-color:rgba(255,255,255,0.9);
+    background-size: cover;
+    background-color:rgba(255,255,255,0.6);
     background-blend-mode:lighten;
-    background-position: 0px 50%;
-    background-image: url('../../public/images/favicon.png');
+    background-position: center;
+    background-image: url('../../public/images/image0.jpeg');
 }
 
 .c-right {
@@ -142,7 +142,7 @@ xl(min-width: 1280px)
 
 @media screen and (min-width:640px) {
     #top {
-        background-size: 60% auto;
+        /* background-size: 60% auto; */
         background-position:center;
     }
 
@@ -152,9 +152,9 @@ xl(min-width: 1280px)
 }
 
 @media screen and (min-width:1280px) {
-    #top {
+    /* #top {
         background-size: 40% auto;
-    }
+    } */
 
     .bstok {
         height: 500px;
