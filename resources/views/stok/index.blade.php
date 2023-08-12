@@ -5,8 +5,8 @@
 
         <div class="h-screen relative">
             <div class="absolute bottom-1/4 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60">
-                <h1 class="font-rare tracking-widest mb-4 text-xl text-shadow">そこに愛はあるんか・・・</h1>
-                <p class="tracking-wide text-shadow font-rare">Is there love there</p>
+                <h1 class="font-rare tracking-widest mb-4 text-xl text-shadow">Second Life</h1>
+                <p class="tracking-wide text-shadow font-rare">~新たな自分への挑戦~</p>
             </div>
             <div class="scrolldown2 font-sub"><span>scroll</span></div>
         </div>
