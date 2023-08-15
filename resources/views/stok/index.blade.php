@@ -4,9 +4,9 @@
         </div>
 
         <div class="h-screen relative">
-            <div class="absolute bottom-1/4 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60">
-                <h1 class="font-rare tracking-widest mb-4 text-xl text-shadow">Second Life</h1>
-                <p class="tracking-wide text-shadow font-rare">~新たな自分への挑戦~</p>
+            <div class="absolute bottom-1/3 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60">
+                <h1 class="tracking-widest mb-4 text-xl sm:text-4xl text-shadow">Second Life</h1>
+                <p class="tracking-wide text-shadow text-xl sm:text-xl">~新たな自分への挑戦~</p>
             </div>
             <div class="scrolldown2 font-sub"><span>scroll</span></div>
         </div>
@@ -21,20 +21,30 @@
                 <div class="mt-8 relative sm:flex">
                     <img class="w-11/12 shadow-md sm:w-1/2" src="{{asset("images/audience.jpg")}}"/>
                     <div class="sec1 bg-white top-14 left-10 w-11/12 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
-                        <p class="text-sm pt-2">01.電気通信事業</p>
-                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">VextMinter</h3>
-                        <p class="text-sm">各企業のノウハウを盗んで生かす。<br>人を使った実績で導く。</p>
+                        <p class="text-sm pt-2">01.人材サービス</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
+                        <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p>
                     </div>
                 </div>
 
-                <div class="mt-32 sm:mt-10 relative flex justify-end sm:justify-center">
+                <div class="mt-36 sm:mt-12 relative flex justify-end sm:justify-center">
                     <div class="w-11/12 sm:flex sm:flex-row-reverse sm:w-full">
                         <img class="sm:w-1/2" src="{{asset("images/business.jpg")}}"/>
-                        <div class="sec1 shadow-md bg-white top-14 right-10 w-11/12 p-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
-                            <p class="text-sm pt-2">02.人材派遣業</p>
-                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">VextMinter</h3>
-                        <p class="text-sm">各企業のノウハウを盗んで生かす。<br>人を使った実績で導く。</p>
+                        <div class="sec1 shadow-md bg-white top-14 right-10 w-11/12 p-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-6 sm:shadow-none h-44 sm:text-center">
+                            <p class="text-sm pt-2">02.ライフラインサポート</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Life Line</h3>
+                        <p class="text-sm text-left">お客様に向け各種ライフラインのサポートを行なっております。
+                            各社と業務提携を行う事で、顧客満足度向上に努めております。</p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 relative sm:flex">
+                    <img class="w-11/12 shadow-md sm:w-1/2" src="{{asset("images/suit.jpg")}}"/>
+                    <div class="sec1 bg-white top-14 left-10 w-11/12 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
+                        <p class="text-sm pt-2">01.人材サービス</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
+                        <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p>
                     </div>
                 </div>
 
@@ -77,4 +87,20 @@
         </div>
     </div>
     {{-- <x-footer /> --}}
+<script>
+$(function () {
+  // スクロールを開始したら
+    $(window).on("scroll", function () {
+    // ファーストビューの高さを取得
+    mvHeight = $("#header").height();
+    if ($(window).scrollTop() > mvHeight) {
+      // スクロールの位置がファーストビューより下の場合にclassを付与
+        $(".hd").css('background-color','white');
+    } else {
+      // スクロールの位置がファーストビューより上の場合にclassを外す
+      $(".hd").css('background-color','initial');
+    }
+    });
+});
+</script>
 </x-layout>

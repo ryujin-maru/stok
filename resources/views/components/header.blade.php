@@ -1,5 +1,5 @@
 
-<header class="w-full fixed top-0 flex justify-between items-center pt-4 px-4 z-50 sm:items-end">
+<header class="w-full fixed top-0 flex justify-between items-center py-4 px-4 z-50 sm:items-end hd">
     <div class="w-28 cursor-pointer sm:ml-8">
         <img src="{{asset('images/logoname.png')}}" alt="logo" />
     </div>
