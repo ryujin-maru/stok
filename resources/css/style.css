@@ -63,7 +63,8 @@ xl(min-width: 1280px)
 }
 
 .sec1 {
-    position:absolute;
+    /* position:absolute; */
+    /* width:100%; */
 }
 
 .nav li.set {
@@ -112,6 +113,20 @@ xl(min-width: 1280px)
 
 .btn {
     background-color: #E41B15;
+}
+
+.comp {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:rgba(255,255,255,0.9);
+    background-blend-mode:lighten;
+    background-position: 0px 50%;
+    background-image: url('../../public/images/favicon.png');
+    opacity: 0;
+}
+
+.comp.target.action {
+    opacity:1;
 }
 
 @keyframes circlemove{

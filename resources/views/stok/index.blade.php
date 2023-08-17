@@ -19,18 +19,18 @@
                 <x-section titleEn="Products" title="事業紹介"/>
 
                 <div class="mt-8 relative sm:flex">
-                    <img class="w-11/12 shadow-md sm:w-1/2" src="{{asset("images/audience.jpg")}}"/>
-                    <div class="sec1 bg-white top-14 left-10 w-11/12 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
+                    <img class="object-cover w-full shadow-md h-36 sm:h-auto sm:w-1/2" src="{{asset("images/audience.jpg")}}"/>
+                    <div class="sec1 w-full bg-white top-14 left-10 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
                         <p class="text-sm pt-2">01.人材サービス</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
                         <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p>
                     </div>
                 </div>
 
-                <div class="mt-36 sm:mt-12 relative flex justify-end sm:justify-center">
-                    <div class="w-11/12 sm:flex sm:flex-row-reverse sm:w-full">
-                        <img class="sm:w-1/2" src="{{asset("images/business.jpg")}}"/>
-                        <div class="sec1 shadow-md bg-white top-14 right-10 w-11/12 p-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-6 sm:shadow-none h-44 sm:text-center">
+                <div class="mt-10 sm:flex sm:justify-center">
+                    <div class="w-full sm:flex sm:flex-row-reverse sm:w-full">
+                        <img class="w-full h-36 sm:h-auto object-cover sm:w-1/2" src="{{asset("images/business.jpg")}}"/>
+                        <div class="sec1 w-full shadow-md bg-white top-14 right-10  p-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-6 sm:shadow-none h-44 sm:text-center">
                             <p class="text-sm pt-2">02.ライフラインサポート</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Life Line</h3>
                         <p class="text-sm text-left">お客様に向け各種ライフラインのサポートを行なっております。
@@ -39,16 +39,16 @@
                     </div>
                 </div>
 
-                <div class="mt-12 relative sm:flex">
-                    <img class="w-11/12 shadow-md sm:w-1/2" src="{{asset("images/suit.jpg")}}"/>
-                    <div class="sec1 bg-white top-14 left-10 w-11/12 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
+                <div class="mt-10 sm:flex">
+                    <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/suit.jpg")}}"/>
+                    <div class="sec1 bg-white top-14 left-10 w-full p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
                         <p class="text-sm pt-2">01.人材サービス</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
                         <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p>
                     </div>
                 </div>
 
-                <x-elements.button class="mt-40"/>
+                <x-elements.button class="mt-20"/>
             </section>
 
             <section>
@@ -78,7 +78,7 @@
                 </x-css.back-red>
             </section>
 
-            <section class="mb-20 sm:pt-20">
+            <section class="mb-20 sm:pt-20 comp transition-all duration-1000  target">
                 <x-section titleEn="Company" title="会社概要"/>
                 <p class="mt-8">ここに適当な会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p>
                 <x-elements.button class="mt-10"/>
