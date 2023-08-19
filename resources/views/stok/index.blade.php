@@ -13,8 +13,22 @@
     </div>
 
 
-    <div id="container" class="flex justify-center pt-20 bg-white">
+    <div id="container" class="flex justify-center bg-white">
+
         <div class="w-10/12 sm:w-8/12">
+            <section class="mb-20 py-8 bg-gray-50 info">
+                <div class="flex justify-center">
+                    <div class="w-10/12 sm:w-8/12">
+                        <p>新着情報</p>
+                        <h2 class="font-sub text-xl mb-2">Infomation</h2>
+                        <div class="w-full border-t border-b border-gray-500">
+                            <p class="p-2"><span class="text-sm mr-8">2023年8月</span>テストページです。</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+
             <section>
                 <x-section titleEn="Products" title="事業紹介"/>
 
