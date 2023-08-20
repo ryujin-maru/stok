@@ -56,9 +56,9 @@
                 <div class="mt-10 sm:flex">
                     <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/suit.jpg")}}"/>
                     <div class="sec1 bg-white top-14 left-10 w-full p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
-                        <p class="text-sm pt-2">01.人材サービス</p>
-                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
-                        <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p>
+                        <p class="text-sm pt-2">03.オーダースーツ</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Order suit</h3>
+                        <p class="text-sm text-left">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p>
                     </div>
                 </div>
 

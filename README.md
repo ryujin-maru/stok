@@ -64,3 +64,30 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## 採用情報
+・仕事内容
+→イベント運営
+→営業代行
+→事務、経理
+・給与
+→入社３ヶ月（研修時）20万円
+→研修後25万〜
+・勤務地
+→本社
+→クライアント先
+（一都三県、福岡）
+・勤務要項
+→09:00~19:00の間（８時間）
+→週休2日
+→1日８時間
+・福利厚生
+→社員寮
+→社会保険
+・職場の雰囲気
+20.30代を中心とした会社の為、休みの日はみんなで出かけたりととても仲のいい会社です。
+
+⭐️お問い合わせ
+会社名or指名
+main@stok-inc.com
+
