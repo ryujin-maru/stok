@@ -15,19 +15,7 @@
 
     <div id="container" class="flex justify-center bg-white">
 
-        <div class="w-10/12 sm:w-8/12">
-            <section class="mb-20 py-8 bg-gray-50 info">
-                <div class="flex justify-center">
-                    <div class="w-10/12 sm:w-8/12">
-                        <p>新着情報</p>
-                        <h2 class="font-sub text-xl mb-2">Infomation</h2>
-                        <div class="w-full border-t border-b border-gray-500">
-                            <p class="p-2"><span class="text-sm mr-8">2023年8月</span>テストページです。</p>
-                    </div>
-                    </div>
-                </div>
-            </section>
-
+        <div class="w-10/12 sm:w-8/12 mt-14">
 
             <section>
                 <x-section titleEn="Products" title="事業紹介"/>
@@ -56,9 +44,9 @@
                 <div class="mt-10 sm:flex">
                     <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/suit.jpg")}}"/>
                     <div class="sec1 bg-white top-14 left-10 w-full p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
-                        <p class="text-sm pt-2">03.オーダースーツ</p>
-                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Order suit</h3>
-                        <p class="text-sm text-left">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p>
+                        <p class="text-sm pt-2">01.人材サービス</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
+                        <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p>
                     </div>
                 </div>
 
@@ -97,6 +85,35 @@
                 <p class="mt-8">ここに適当な会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p>
                 <x-elements.button class="mt-10"/>
             </section>
+
+            <div class="info sm:flex">
+                <section class="bg-gray-50 pt-10 pb-6 flex justify-center flex-1">
+                    <div class="w-10/12 sm:w-8/12">
+                        <div class="">
+                            <h2>採用情報</h2>
+                            <h2 class="font-sub text-xl">Recruit</h2>
+                        </div>
+                        <div class="mt-5">
+                            <img class="w-4/5 mx-auto flex-1 sm:hidden" src="{{asset('images/bother2.jpg')}}" alt="">
+                            <p class="mt-6 flex-1">ここに採用情報を載せます。一部だけやけど。テスト募集しています結婚式、やばい書くことないニーとなりたい。</p>
+                        </div>
+                        <x-elements.button class="mt-8"/>
+                    </div>
+                </section>
+
+                <section class="bg-gray-100 h-auto pt-10 pb-6 flex justify-center flex-1">
+                    <div class="w-10/12 sm:w-8/12">
+                        <div class="">
+                            <h2>新着情報</h2>
+                            <h2 class="font-sub text-xl">Information</h2>
+                            <div class="my-8">
+                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2023年08月27日</span>webサイトを開設しました。</p>
+                                <p class="text-sm border-y border-white py-4"><span class="mr-4">2023年08月26日</span>会社を設立しました。ﾔﾀｰ</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
         </div>
     </div>
