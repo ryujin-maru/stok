@@ -12,11 +12,12 @@
         <div>
             <nav class="w-full flex justify-center">
                 <ul class="font-sub text-black flex nav">
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">HOME</li>
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">PRODUCTS</li>
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">MEMBERS</li>
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">CONTACT</li>
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">COMPANY</li>
+                    <a href="{{route('stok.index')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">ホーム</li></a>
+                    <a href="{{route('stok.index')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">事業紹介</li></a>
+                    <a href="{{route('stok.index')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">代表挨拶</li></a>
+                    <a href="{{route('stok.contact')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">お問い合わせ</li></a>
+                    <a href="{{route('stok.company')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">会社概要</li></a>
+                    <a href="{{route('stok.recruit')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">採用情報</li></a>
                 </ul>
             </nav>
         </div>
@@ -29,11 +30,12 @@
     </div>
     <nav class="w-full flex justify-center">
         <ul class="font-sub text-white inline-block nav">
-            <li class="mb-4 mt-2 opacity-0 translate-x-1.5 transition-all duration-1000">HOME　　　　--トップ</li>
-            <li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">PRODUCTS　　--事業紹介</li>
-            <li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">MEMBERS　　--メンバー</li>
-            <li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">CONTACT　　--お問い合わせ</li>
-            <li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--会社概要</li>
+            <a href="{{route('stok.index')}}"><li class="mb-4 mt-2 opacity-0 translate-x-1.5 transition-all duration-1000">HOME　　　　--トップ</li></a>
+            <a href="{{route('stok.index')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">PRODUCTS　　--事業紹介</li></a>
+            <a href="{{route('stok.index')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">MEMBERS　　--メンバー</li></a>
+            <a href="{{route('stok.contact')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">CONTACT　　--お問い合わせ</li></a>
+            <a href="{{route('stok.company')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--会社概要</li></a>
+            <a href="{{route('stok.recruit')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--採用情報</li></a>
         </ul>
     </nav>
 </div> 

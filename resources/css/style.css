@@ -134,6 +134,30 @@ xl(min-width: 1280px)
     margin: 0 calc(50% - 50vw);
 }
 
+#btn:after {
+    content: "";
+    position:absolute;
+    top:0;
+    /* bottom:0; */
+    left:0;
+    width:0;
+    height: 100%;
+    z-index: -1;
+    background-color: #E41B15;
+    transition: .3s;
+}
+
+#btn:hover {
+    color:white;
+    border: none;
+}
+
+#btn:hover:after {
+    width: 100%;
+}
+
+
+
 @keyframes circlemove{
     0%{bottom:75px;}
    100%{bottom:-5px;}

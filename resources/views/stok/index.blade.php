@@ -60,7 +60,7 @@
                     <img style="margin:0 auto;" class="shadow-xl" src="{{asset('/images/peaple.jpg')}}" alt="">
                 </div>
 
-                <x-elements.button class="mt-6"/>
+                <x-elements.button class="mt-10"/>
             </section>
 
             <section class="mb-16 mt-32">
@@ -74,7 +74,9 @@
                                 </div>
                             </div>
                             <p class="mt-8">ここに問い合わせをお願いします。働ける人募集しています。奴隷のように働けるような熱量を持った人がいいな。</p>
-                            <x-elements.button class="mt-10"/>
+                            <div class="mb-8 text-center relative z-10 mt-10">
+                                <a href="{{route('stok.contact')}}" class="relative font-sub border px-8 py-2 sm:px-16 sm:py-4 border-gray-700 shadow-md cursor-pointer text-black bg-white">See more</a>
+                            </div>
                         </div>
                     </div>
                 </x-css.back-red>
@@ -83,7 +85,7 @@
             <section class="mb-20 sm:pt-20 comp transition-all duration-1000  target">
                 <x-section titleEn="Company" title="会社概要"/>
                 <p class="mt-8">ここに適当な会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p>
-                <x-elements.button class="mt-10"/>
+                <x-elements.button class="mt-10" href="{{route('stok.company')}}"/>
             </section>
 
             <div class="info sm:flex">
@@ -97,7 +99,7 @@
                             <img class="w-4/5 mx-auto flex-1 sm:hidden" src="{{asset('images/bother2.jpg')}}" alt="">
                             <p class="mt-6 flex-1">ここに採用情報を載せます。一部だけやけど。テスト募集しています結婚式、やばい書くことないニーとなりたい。</p>
                         </div>
-                        <x-elements.button class="mt-8"/>
+                        <x-elements.button class="mt-8" href="{{route('stok.recruit')}}"/>
                     </div>
                 </section>
 

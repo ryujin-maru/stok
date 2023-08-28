@@ -12,6 +12,11 @@
                     <p class="text-red-500">{{$message}}</p>
                     @enderror
                 </div>
+                <div class="mt-6 pb-4 border-b border-gray-200">
+                    {{-- <label class="text-sm"></label><br> --}}
+                    <input type="radio" name="status" value="company" id="company" checked><label for="company">法人</label>
+                    <input class="ml-3" type="radio" name="status" value="individual" id="individual"><label for="individual">個人</label>
+                </div>
                 <div class="mt-4 pb-4 border-b border-gray-200">
                     <label class="text-sm">メールアドレス</label><br>
                     <input class="focus:outline-red-200 w-full leading-loose bg-gray-100 rounded-sm pl-1 mt-2" type="e-mail" name="mail" placeholder="例: email@xxx.com" value="{{old('mail')}}">
@@ -36,7 +41,7 @@
                 </div>
             </div>
             <div class="flex justify-center w-full mb-8 mt-4">
-                <input class="text-gray-100 bg-black w-3/5 rounded-md py-2 md:py-4" type="submit" name="sub" value="送信">
+                <input class=" cursor-pointer text-gray-100 bg-black w-3/5 rounded-md py-2 md:py-4" type="submit" name="sub" value="送信">
             </div>
         </form>
     </x-fail-layout>
