@@ -12,11 +12,11 @@
         <div>
             <nav class="w-full flex justify-center">
                 <ul class="font-sub text-black flex nav">
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">HOME</li>
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">PRODUCTS</li>
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">MEMBERS</li>
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">CONTACT</li>
-                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">COMPANY</li>
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">ホーム</li>
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">事業紹介</li>
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">代表挨拶</li>
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">問い合わせ</li>
+                    <li class="pr-4  translate-x-1.5 transition-all duration-1000">会社概要</li>
                 </ul>
             </nav>
         </div>
