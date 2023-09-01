@@ -24,5 +24,8 @@ Route::get('/company', function () {
 Route::get('/recruit',function() {
     return view('stok.recruit');
 })->name('stok.recruit');
+Route::get('/products',function() {
+    return view('stok.products');
+})->name('stok.recruit');
 Route::get('/contact',[MailController::class,'show'])->name('stok.contact');
 Route::post('/contact/send',[MailController::class,'sendMail'])->name('stok.send');
