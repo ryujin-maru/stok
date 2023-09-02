@@ -21,5 +21,11 @@ Route::get('/', function () {
 Route::get('/company', function () {
     return view('stok.company');
 })->name('stok.company');
+Route::get('/recruit',function() {
+    return view('stok.recruit');
+})->name('stok.recruit');
+Route::get('/products',function() {
+    return view('stok.products');
+})->name('stok.products');
 Route::get('/contact',[MailController::class,'show'])->name('stok.contact');
 Route::post('/contact/send',[MailController::class,'sendMail'])->name('stok.send');
