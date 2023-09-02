@@ -30,8 +30,8 @@
     </div>
     <nav class="w-full flex justify-center">
         <ul class="font-sub text-white inline-block nav">
-            <a href="{{route('stok.index')}}"><li class="mb-4 mt-2 opacity-0 translate-x-1.5 transition-all duration-1000">HOME　　　　--トップ</li></a>
-            <a href="{{route('stok.index')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">PRODUCTS　　--事業紹介</li></a>
+            <a href="{{route('stok.index')}}"><li class="mb-4 mt-2 opacity-0 translate-x-1.5 transition-all duration-1000">HOME　　　　--ホーム</li></a>
+            <a href="{{route('stok.products')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">PRODUCTS　　--事業紹介</li></a>
             <a href="{{route('stok.index')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">MEMBERS　　--メンバー</li></a>
             <a href="{{route('stok.contact')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">CONTACT　　--お問い合わせ</li></a>
             <a href="{{route('stok.company')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--会社概要</li></a>

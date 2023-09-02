@@ -22,10 +22,9 @@
 
                 <div class="mt-8 relative sm:flex">
                     <img class="object-cover w-full shadow-md h-36 sm:h-auto sm:w-1/2" src="{{asset("images/audience.jpg")}}"/>
-                    <div class="sec1 w-full bg-white top-14 left-10 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
-                        <p class="text-sm pt-2">01.人材サービス</p>
+                    <div class="sec1 w-full bg-white top-14 left-10 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-8 sm:shadow-none h-44 sm:text-center">
+                        <p class="text-sm pt-4">01.人材サービス</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
-                        <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p>
                     </div>
                 </div>
 
@@ -33,20 +32,18 @@
                     <div class="w-full sm:flex sm:flex-row-reverse sm:w-full">
                         <img class="w-full h-36 sm:h-auto object-cover sm:w-1/2" src="{{asset("images/business.jpg")}}"/>
                         <div class="sec1 w-full shadow-md bg-white top-14 right-10  p-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-6 sm:shadow-none h-44 sm:text-center">
-                            <p class="text-sm pt-2">02.ライフラインサポート</p>
+                            <p class="text-sm pt-8">02.ライフラインサポート</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Life Line</h3>
-                        <p class="text-sm text-left">お客様に向け各種ライフラインのサポートを行なっております。
-                            各社と業務提携を行う事で、顧客満足度向上に努めております。</p>
+                        
                         </div>
                     </div>
                 </div>
 
-                <div class="mt-10 sm:flex">
+                <div class="mt-10 sm:flex ites-center">
                     <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/suit.jpg")}}"/>
                     <div class="sec1 bg-white top-14 left-10 w-full p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:text-center">
-                        <p class="text-sm pt-2">01.人材サービス</p>
-                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
-                        <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p>
+                        <p class="text-sm pt-8">03.オーダースーツ事業</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Order Suit</h3>
                     </div>
                 </div>
 
@@ -54,7 +51,7 @@
             </section>
 
             <section>
-                <x-section titleEn="Members" title="メンバー"/>
+                <x-section titleEn="Greeting" title="代表挨拶"/>
 
                 <div class="mt-4 transition-all duration-1000  target opacity-0 text-center">
                     <img style="margin:0 auto;" class="shadow-xl" src="{{asset('/images/peaple.jpg')}}" alt="">
@@ -73,7 +70,7 @@
                                 <div class="w-3/4 border-t border-white">
                                 </div>
                             </div>
-                            <p class="mt-8">ここに問い合わせをお願いします。働ける人募集しています。奴隷のように働けるような熱量を持った人がいいな。</p>
+                            <p class="mt-8"><br></p>
                             <div class="mb-8 text-center relative z-10 mt-10">
                                 <a href="{{route('stok.contact')}}" class="relative font-sub border px-8 py-2 sm:px-16 sm:py-4 border-gray-700 shadow-md cursor-pointer text-black bg-white">See more</a>
                             </div>
@@ -84,7 +81,7 @@
 
             <section class="mb-20 sm:pt-20 comp transition-all duration-1000  target">
                 <x-section titleEn="Company" title="会社概要"/>
-                <p class="mt-8">ここに適当な会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p>
+                <p class="mt-8"><br></p>
                 <x-elements.button class="mt-10" href="{{route('stok.company')}}"/>
             </section>
 
@@ -97,7 +94,7 @@
                         </div>
                         <div class="mt-5">
                             <img class="w-4/5 mx-auto flex-1 sm:hidden" src="{{asset('images/bother2.jpg')}}" alt="">
-                            <p class="mt-6 flex-1">ここに採用情報を載せます。一部だけやけど。テスト募集しています結婚式、やばい書くことないニーとなりたい。</p>
+                            <p class="mt-6 flex-1"><br></p>
                         </div>
                         <x-elements.button class="mt-8" href="{{route('stok.recruit')}}"/>
                     </div>

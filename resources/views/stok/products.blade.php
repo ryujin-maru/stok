@@ -43,8 +43,8 @@
 
                         </div>
 
-                        <div class="opacity-0 bg-gray-100 border border-white pb-8 px-8 pt-8 md:w-80 md:ml-8" style="padding-bottom:2rem;">
-                            <h2 class="text-lg font-bold mb-4">ライフラインサポート</h2>
+                        <div class="opacity-0 bg-gray-100 border border-white pb-8 px-8 pt-8 md:w-80 md:ml-8 hidden sm:block" style="padding-bottom:2rem;">
+                            <h2 class="text-lg font-bold mb-4 ">ライフラインサポート</h2>
                             <p class="pb-4">お客様に向け各種ライフラインのサポートを行なっております。
                                 各社と業務提携を行う事で、顧客満足度向上に努めております。</p>
                         </div>
