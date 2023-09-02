@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <x-elements.button class="mt-20"/>
+                <x-elements.button class="mt-20" href="{{route('stok.products')}}"/>
             </section>
 
             <section>

@@ -13,7 +13,7 @@
             <nav class="w-full flex justify-center">
                 <ul class="font-sub text-black flex nav">
                     <a href="{{route('stok.index')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">ホーム</li></a>
-                    <a href="{{route('stok.index')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">事業紹介</li></a>
+                    <a href="{{route('stok.products')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">事業紹介</li></a>
                     <a href="{{route('stok.index')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">代表挨拶</li></a>
                     <a href="{{route('stok.contact')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">お問い合わせ</li></a>
                     <a href="{{route('stok.company')}}"><li class="pr-4  translate-x-1.5 transition-all duration-1000">会社概要</li></a>
