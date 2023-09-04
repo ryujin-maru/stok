@@ -26,11 +26,11 @@
                 </tr> 
                 <tr>
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8">資本金</th>
-                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">100万円</td>
+                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">1,000,000円</td>
                 </tr> 
-                <tr>
-                    <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8">従業員数</th>
-                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">20人</td>
+                <tr class="sm:flex">
+                    <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8">従業員数<br>(バイト含む)</th>
+                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">080-2799-3102</td>
                 </tr> 
                 <tr>
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8">法人番号</th>

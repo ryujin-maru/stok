@@ -16,13 +16,14 @@ class MailController extends Controller
         $data = $request->validate([
             'name' => 'required|string|max:20',
             'mail' => 'required|email',
-            'phone' => 'required|nullable|max:10|min:7|regex:/^[0-9-]+$/',
-            'text' => 'required|max:2000'
-        ],
-        [
-            'phone.regex' => '電話番号の形式で入力してください'
-        ]
-    );
+            'phone' => 'required|nullable|max:12|min:7|regex:/^[0-9-]+$/',
+            'text' => 'required|max:2000',
+            'status' => ''
+            ],
+            [
+                'phone.regex' => '電話番号の形式で入力してください'
+            ]
+        );
 
         Mail::to('juktwmh@gmail.com')->send(new SendMail($data));
 

@@ -32,7 +32,7 @@ class SendMail extends Mailable
     {
         return new Envelope(
             from: new Address($this->data['mail'],$this->data['name']),
-            subject: 'テストからの配信です',
+            subject: $this->data['status'],
         );
     }
 

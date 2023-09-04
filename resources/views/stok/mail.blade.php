@@ -14,8 +14,12 @@
                 </div>
                 <div class="mt-6 pb-4 border-b border-gray-200">
                     {{-- <label class="text-sm"></label><br> --}}
-                    <input type="radio" name="status" value="company" id="company" checked><label for="company">法人</label>
-                    <input class="ml-3" type="radio" name="status" value="individual" id="individual"><label for="individual">個人</label>
+                    <input type="radio" name="status" value="会社について詳しく知りたい" id="company" checked><label for="company">会社について詳しく知りたい</label><br>
+                    <input class="mt-2" type="radio" name="status" value="お仕事依頼" id="request"><label for="request">お仕事依頼</label><br>
+                    <input class="mt-2" type="radio" name="status" value="社長とお話ししたい" id="talk"><label for="talk">社長とお話ししたい</label><br>
+                    <input class="mt-2" type="radio" name="status" value="ご相談" id="conf"><label for="conf">ご相談</label><br>
+                    <input class="mt-2" type="radio" name="status" value="採用について" id="requ"><label for="requ">採用について</label><br>
+                    <input class="mt-2" type="radio" name="status" value="その他" id="others"><label for="others">その他</label><br>
                 </div>
                 <div class="mt-4 pb-4 border-b border-gray-200">
                     <label class="text-sm">メールアドレス</label><br>

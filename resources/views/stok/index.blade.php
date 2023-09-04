@@ -97,7 +97,7 @@
                         </div>
                         <div class="mt-5">
                             <img class="w-4/5 mx-auto flex-1 sm:hidden" src="{{asset('images/bother2.jpg')}}" alt="">
-                            {{-- <p class="mt-6 flex-1">ここに採用情報を載せます。一部だけやけど。テスト募集しています結婚式、やばい書くことないニーとなりたい。</p> --}}
+                            <p class="mt-6 flex-1"><br></p>
                         </div>
                         <x-elements.button class="mt-8" href="{{route('stok.recruit')}}"/>
                     </div>
@@ -108,11 +108,11 @@
                         <div class="">
                             <h2>新着情報</h2>
                             <h2 class="font-sub text-xl">Information</h2>
-                            {{-- <div class="my-8">
+                            <div class="my-8">
                                 <p class="text-sm border-t border-white py-4"><span class="mr-4">2023年08月27日</span>webサイトを開設しました。</p>
                                 <p class="text-sm border-y border-white py-4"><span class="mr-4">2023年08月26日</span>会社を設立しました。ﾔﾀｰ</p>
-                            </div> --}}
-                            <x-elements.button class="mt-8" href="{{route('stok.recruit')}}"/>
+                            </div>
+                            {{-- <x-elements.button class="mt-8" href="{{route('stok.recruit')}}"/> --}}
                         </div>
                     </div>
                 </section>
