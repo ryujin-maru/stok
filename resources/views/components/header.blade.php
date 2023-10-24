@@ -1,11 +1,11 @@
 
 <header class="w-full fixed top-0 flex justify-between items-center py-4 px-4 z-50 sm:items-end hd">
     <div class="w-28 cursor-pointer sm:ml-8">
-        <img src="{{asset('images/logoname.png')}}" alt="logo" />
+        <img src="{{asset('images/logoname.png')}}" alt="株式会社ストックのロゴ" />
     </div>
 
     <div class="w-6 cursor-pointer sm:mr-8 hum sm:hidden">
-        <img src="{{asset('icon/menu.png')}}" alt="menu" />
+        <img src="{{asset('icon/menu.png')}}" alt="ハンバーガーメニュー" />
     </div>
 
     <div class="hidden sm:block">
@@ -26,7 +26,7 @@
 
 <div class="fixed top-0 w-full bg-black z-50 hidden menu">
     <div class="w-5 float-right mt-4 mr-6 batu">
-        <img src="{{asset('icon/batu.png')}}" alt="close" />
+        <img src="{{asset('icon/batu.png')}}" alt="閉じるボタン" />
     </div>
     <nav class="w-full flex justify-center">
         <ul class="font-sub text-white inline-block nav">

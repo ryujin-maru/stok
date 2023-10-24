@@ -1,10 +1,10 @@
 <x-layout title="Recruit">
     <x-elements.sub-main title="Products" enTitle="事業内容" />
     <div class="bg-gray-100">
-        <img class="w-full object-cover" src="{{asset("images/team.jpg")}}" />
+        <img class="w-full object-cover" src="{{asset("images/team.jpg")}}" alt="４人で拳を合わせる社会人"/>
         <div class="flex justify-center">
             <div class="w-11/12 text-gray-500 text-left my-8">
-                <h1 class="text-center mb-8 mt-10">新進気鋭のスタートアップ会社だからこそ、<br>お客様に親密に寄り添いより良いサービスを提供することができます。</h1>
+                <h1 class="text-center mb-8 mt-10">新進気鋭の株式会社Stokだからこそ、<br>お客様に親密に寄り添いより良いサービスを提供することができます。</h1>
 
                 <div>
                     <div class="mb-8 sm:flex justify-center">
