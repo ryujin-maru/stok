@@ -7,8 +7,8 @@
                 <h1 class="text-center mb-8 mt-10">新進気鋭のスタートアップ会社だからこそ、<br>お客様に親密に寄り添いより良いサービスを提供することができます。</h1>
 
                 <div>
-                    <div class="mb-8 sm:flex justify-center">
-                        <div class=" bg-white pb-8 px-8 pt-8 mb-8 sm:mb-0 md:w-80 md:mr-8">
+                    <div class="mb-8 md:flex justify-center">
+                        <div class=" bg-white pb-8 px-8 pt-8 mb-8 md:mb-0 md:w-80 md:mr-8">
                             <h2 class="text-lg font-bold mb-4">人材サービス</h2>
                             <p class="pb-4">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。<br>お客様のご希望に合わせて、プロフェッショナルなスタッフをご用意しております。</p>
 
@@ -21,8 +21,8 @@
 
                     </div>
 
-                    <div class="mb-8 sm:flex justify-center flex-row-reverse">
-                        <div class=" bg-white pb-8 px-8 pt-8 mb-8 sm:mb-0 md:w-80 md:ml-8">
+                    <div class="mb-8 md:flex justify-center flex-row-reverse">
+                        <div class=" bg-white pb-8 px-8 pt-8 mb-8 md:mb-0 md:w-80 md:ml-8">
                             <h2 class="text-lg font-bold mb-4">イベント運営</h2>
                             <p class="pb-4">大型フェス、コンサート、小規模イベント等の設営から運営までをお手伝いさせて頂いております。<br>１００人規模のイベントも対応しております。</p>
 
@@ -36,7 +36,7 @@
 
                     </div>
 
-                    <div class="mb-8 sm:flex justify-center">
+                    <div class="mb-8 md:flex justify-center">
                         <div class=" bg-white pb-8 px-8 pt-8 mb-8 sm:mb-0 md:w-80 md:mr-8">
                             <h2 class="text-lg font-bold mb-4">オーダースーツ事業</h2>
                             <p class="pb-4">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p>
