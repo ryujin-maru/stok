@@ -1,0 +1,210 @@
+/* 開発用ブレイクポイント
+sm(min-width: 640px)
+md(min-width: 768px)
+lg(min-width: 1024px)
+xl(min-width: 1280px)
+*/
+
+@font-face {
+    font-family: blueSpring;
+    src: url('../../public/fonts/えり字.otf') format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+.ii {
+    font-family: 'Shippori Mincho', serif;
+}
+
+.test {
+    font-family: blueSpring;
+}
+
+.target.action {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.bstok {
+    margin: 0 calc(50% - 50vw);
+    position: relative;
+    z-index: 11;
+}
+
+.bstok::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #E41B15;
+    transform: skewY(10deg);
+    z-index: -1;
+    width: 0px;
+    transition: all .5s;
+}
+
+.bstok.action::before {
+    width: 100%;
+}
+
+#top {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode:lighten;
+    background-position: center;
+    background-image: url('../../public/images/image0.jpeg');
+}
+
+.c-right {
+    background-color: white;
+}
+
+.sec1 {
+    /* position:absolute; */
+    /* width:100%; */
+}
+
+.nav li.set {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.scrolldown2{
+    /*描画位置※位置は適宜調整してください*/
+	position:absolute;
+	bottom:5px;
+	left:85%;
+}
+
+.scrolldown2 span{
+    /*描画位置*/
+	position: absolute;
+	left:5px;
+	bottom:30px;
+    /*テキストの形状*/
+	color: black;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+	/*縦書き設定*/
+	-ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.scrolldown2:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom:0;
+    left:-4px;
+    /*丸の形状*/
+	width:1px;
+	height:10px;
+	/* border-radius: 50%; */
+	background:black;
+    /*丸の動き1.6秒かけて透過し、永遠にループ*/
+	animation:
+    circlemove 1.6s ease-in-out infinite,
+    cirlemovehide 1.6s ease-out infinite;
+}
+
+.btn {
+    background-color: #E41B15;
+}
+
+.comp {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:rgba(255,255,255,0.9);
+    background-blend-mode:lighten;
+    background-position: 0px 50%;
+    background-image: url('../../public/images/favicon.png');
+    opacity: 0;
+}
+
+.comp.target.action {
+    opacity:1;
+}
+
+.info {
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+}
+
+#btn:after {
+    content: "";
+    position:absolute;
+    top:0;
+    /* bottom:0; */
+    left:0;
+    width:0;
+    height: 100%;
+    z-index: -1;
+    background-color: #E41B15;
+    transition: .3s;
+}
+
+#btn:hover {
+    color:white;
+    border: none;
+}
+
+#btn:hover:after {
+    width: 100%;
+}
+
+
+
+@keyframes circlemove{
+    0%{bottom:75px;}
+   100%{bottom:-5px;}
+}
+
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide{
+    0%{opacity:0}
+    50%{opacity:1;}
+    80%{opacity:0.9;}
+    100%{opacity:0;}
+}
+
+/* 線の描写 */
+.scrolldown2:after{
+    content:"";
+    /*描画位置*/
+    position: absolute;
+    bottom:0;
+    left:0;
+    /*線の形状*/
+    width:1px;
+    height: 90px;
+    background:black;
+}
+
+@media screen and (min-width:640px) {
+    #top {
+        /* background-size: 60% auto; */
+        background-position:center;
+    }
+
+    .sec1 {
+        position:initial;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    /* #top {
+        background-size: 40% auto;
+    } */
+
+    .bstok {
+        height: 500px;
+    }
+
+    .cov {
+        width: 1000px;
+    }
+}
