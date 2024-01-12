@@ -2,7 +2,7 @@
     <x-elements.sub-main title="Recruit" enTitle="採用情報" />
 
     <div class="bg-gray-100">
-        <img class="w-full object-cover" src="{{asset("images/fes1.jpg")}}" />
+        <img class="w-full object-cover" src="{{asset("images/fes1.jpg")}}" alt="空を背景にフェスを楽しむ人々" />
         <div class="flex justify-center">
             <div class="w-10/12 text-gray-500 text-left my-8 ">
                 <div class="mt-8 border-b border-gray-500 pb-4">

@@ -21,7 +21,7 @@
                 <x-section titleEn="Products" title="事業紹介"/>
 
                 <div class="mt-8 relative sm:flex items-center">
-                    <img class="object-cover w-full shadow-md h-36 sm:h-auto sm:w-1/2" src="{{asset("images/audience.jpg")}}"/>
+                    <img class="object-cover w-full shadow-md h-36 sm:h-auto sm:w-1/2" src="{{asset("images/audience.jpg")}}" alt="ライブに集まった人々" />
                     <div class="sec1 w-full bg-white top-14 left-10 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 sm:h-auto text-center">
                         <p class="text-sm pt-2">01.人材サービス</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
@@ -31,7 +31,7 @@
 
                 <div class="mt-10 sm:flex sm:justify-center items-center">
                     <div class="w-full sm:flex sm:flex-row-reverse sm:w-full">
-                        <img class="w-full h-36 sm:h-auto object-cover sm:w-1/2" src="{{asset("images/business.jpg")}}"/>
+                        <img class="w-full h-36 sm:h-auto object-cover sm:w-1/2" src="{{asset("images/business.jpg")}}" alt="ネットワークを使用してライフラインを形成"/>
                         <div class="sec1 w-full shadow-md bg-white top-14 right-10  p-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-6 sm:shadow-none h-44 text-center sm:h-auto">
                             <p class="text-sm pt-2">02.ライフラインサポート</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Life Line</h3>
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="mt-10 sm:flex items-center">
-                    <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/suit.jpg")}}"/>
+                    <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/suit.jpg")}}" alt="黒いスーツを着て時計を見る男性"/>
                     <div class="sec1 bg-white top-14 left-10 w-full p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-44 text-center sm:h-auto">
                         <p class="text-sm pt-2">03.オーダースーツ事業</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Order Suit</h3>
@@ -57,7 +57,7 @@
                 <x-section titleEn="Greetings" title="代表挨拶"/>
 
                 <div class="mt-4 transition-all duration-1000  target opacity-0 text-center">
-                    <img style="margin:0 auto;" class="shadow-xl" src="{{asset('/images/peaple.jpg')}}" alt="">
+                    <img style="margin:0 auto;" class="shadow-xl" src="{{asset('/images/peaple.jpg')}}" alt="肩を組んで空を見る若い人々">
                 </div>
 
                 <x-elements.button class="mt-10"/>
@@ -91,7 +91,7 @@
             <div class="info sm:flex">
                 <section class="bg-gray-50 pt-10 pb-6 flex justify-center flex-1">
                     <div class="w-10/12 sm:w-8/12">
-                        <div class="">
+                        <div class="自然の中に株式会社ストックのロゴ">
                             <h2>採用情報</h2>
                             <h2 class="font-sub text-xl">Recruit</h2>
                         </div>

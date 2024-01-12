@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,18 +15,20 @@ use App\Http\Controllers\MailController;
 |
 */
 
-Route::get('/', function () {
-    return view('stok.index');
-})->name('stok.index');
+Route::get('/', [IndexController::class,'home'])->name('stok.index');
+Route::get('/company', [IndexController::class,'company'])->name('stok.company');
+Route::get('/recruit', [IndexController::class,'recruit'])->name('stok.recruit');
+Route::get('/products', [IndexController::class,'products'])->name('stok.products');
+Route::get('/contact', [IndexController::class,'contact'])->name('stok.contact');
 
-Route::get('/company', function () {
-    return view('stok.company');
-})->name('stok.company');
-Route::get('/recruit',function() {
-    return view('stok.recruit');
-})->name('stok.recruit');
-Route::get('/products',function() {
-    return view('stok.products');
-})->name('stok.products');
+// Route::get('/company', function () {
+//     return view('stok.company');
+// })->name('stok.company');
+// Route::get('/recruit',function() {
+//     return view('stok.recruit');
+// })->name('stok.recruit');
+// Route::get('/products',function() {
+//     return view('stok.products');
+// })->name('stok.products');
 Route::get('/contact',[MailController::class,'show'])->name('stok.contact');
 Route::post('/contact/send',[MailController::class,'sendMail'])->name('stok.send');
