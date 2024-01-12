@@ -36,7 +36,7 @@ class IndexController extends Controller
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::jsonLd()->addImage('https://codecasts.com.br/img/logo.jpg');
-        // $posts = Post::all();
+        // $posts = Post::all()
         return view('stok.index');
     }
     public function products() {
