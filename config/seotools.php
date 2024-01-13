@@ -18,7 +18,7 @@ return [
         'defaults'       => [
             'title'        => false, // set false to total remove
             'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
-            'description'  => 'For those who helped create the Genki Dama', // set false to total remove
+            'description'  => '株式会社STOKは通信事業やイベント事業などを展開するスタートアップ企業です。', // set false to total remove
             'separator'    => ' - ',
             'keywords'     => ['Stok','stok','下川巧記','通信事業','イベント事業'],
             'canonical'    => null, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
@@ -44,7 +44,7 @@ return [
          */
         'defaults' => [
             'title'       => 'Stok', // set false to total remove
-            'description' => 'For those who helped create the Genki Dama', // set false to total remove
+            'description' => '株式会社STOKは通信事業やイベント事業などを展開するスタートアップ企業です。', // set false to total remove
             'url'         => false, // Set null for using Url::current(), set false to total remove
             'type'        => false,
             'site_name'   => false,
@@ -66,7 +66,7 @@ return [
          */
         'defaults' => [
             'title'       => '株式会社Stok', // set false to total remove
-            'description' => 'For those who helped create the Genki Dama', // set false to total remove
+            'description' => '株式会社STOKは通信事業やイベント事業などを展開するスタートアップ企業です。', // set false to total remove
             'url'         => null, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'type'        => 'WebPage',
             'images'      => [],

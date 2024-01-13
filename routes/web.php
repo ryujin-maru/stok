@@ -19,7 +19,7 @@ Route::get('/', [IndexController::class,'home'])->name('stok.index');
 Route::get('/company', [IndexController::class,'company'])->name('stok.company');
 Route::get('/recruit', [IndexController::class,'recruit'])->name('stok.recruit');
 Route::get('/products', [IndexController::class,'products'])->name('stok.products');
-Route::get('/contact', [IndexController::class,'contact'])->name('stok.contact');
+Route::get('/greet', [IndexController::class,'greet'])->name('stok.greet');
 
 // Route::get('/company', function () {
 //     return view('stok.company');
