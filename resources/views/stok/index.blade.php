@@ -32,7 +32,7 @@
                 <div class="mt-10 sm:flex sm:justify-center items-center">
                     <div class="w-full sm:flex sm:flex-row-reverse sm:w-full">
                         <img class="w-full h-36 sm:h-auto object-cover sm:w-1/2" src="{{asset("images/business.jpg")}}"/>
-                        <div class="sec1 w-full shadow-md bg-white top-14 right-10  p-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-6 sm:shadow-none h-44 text-center sm:h-auto">
+                        <div class="sec1 w-full shadow-md bg-white top-14 right-10  p-5 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-6 sm:shadow-none h-44 text-center sm:h-auto">
                             <p class="text-sm pt-2">02.ライフラインサポート</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Life Line</h3>
                         {{-- <p class="text-sm text-left">お客様に向け各種ライフラインのサポートを行なっております。
