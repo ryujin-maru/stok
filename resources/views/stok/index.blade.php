@@ -96,7 +96,7 @@
                             <h2 class="font-sub text-xl">Recruit</h2>
                         </div>
                         <div class="mt-5">
-                            <img class="w-4/5 mx-auto flex-1 sm:hidden" src="{{asset('images/bother2.jpg')}}" alt="">
+                            <img class="w-4/5 mx-auto flex-1 sm:hidden" src="{{asset('images/bother2.jpg')}}" alt="株式会社STOKのイメージ画像">
                             <p class="mt-6 flex-1"><br></p>
                         </div>
                         <x-elements.button class="mt-8" href="{{route('stok.recruit')}}"/>
