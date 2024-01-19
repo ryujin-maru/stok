@@ -32,7 +32,7 @@
         <ul class="font-sub text-white inline-block nav">
             <a href="{{route('stok.index')}}"><li class="mb-4 mt-2 opacity-0 translate-x-1.5 transition-all duration-1000">HOME　　　　--ホーム</li></a>
             <a href="{{route('stok.products')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">PRODUCTS　　--事業紹介</li></a>
-            <a href="{{route('stok.greet')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">MEMBERS　　--代表挨拶</li></a>
+            <a href="{{route('stok.greet')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">GREET　　　　--代表挨拶</li></a>
             <a href="{{route('stok.contact')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">CONTACT　　--お問い合わせ</li></a>
             <a href="{{route('stok.company')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--会社概要</li></a>
             <a href="{{route('stok.recruit')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--採用情報</li></a>
