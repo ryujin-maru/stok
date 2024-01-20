@@ -60,7 +60,7 @@
                     <img style="margin:0 auto;" class="shadow-xl" src="{{asset('/images/peaple.jpg')}}" alt="肩を組んで空を見る若い人々">
                 </div>
 
-                <x-elements.button class="mt-10"/>
+                <x-elements.button class="mt-10" href="{{route('stok.greet')}}"/>
             </section>
 
             <section class="mb-16 mt-32">
