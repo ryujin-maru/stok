@@ -13,7 +13,7 @@
 
                     <a href="{{route('stok.index')}}"><li>ホーム</li></a>
                     <a href="{{route('stok.products')}}"><li>事業紹介</li></a>
-                    <a href="{{route('stok.index')}}"><li>代表挨拶</li></a>
+                    <a href="{{route('stok.greet')}}"><li>代表挨拶</li></a>
                     <a href="{{route('stok.contact')}}"><li>お問い合わせ</li></a>
                     <a href="{{route('stok.company')}}"><li>会社概要</li></a>
                     <a href="{{route('stok.recruit')}}"><li>採用情報</li></a>
