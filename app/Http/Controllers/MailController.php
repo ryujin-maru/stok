@@ -32,7 +32,7 @@ class MailController extends Controller
             ]
         );
 
-        Mail::to('juktwmh@gmail.com')->send(new SendMail($data));
+        Mail::to('main@stok.email')->send(new SendMail($data));
 
         return view('mail.complete');
     }
