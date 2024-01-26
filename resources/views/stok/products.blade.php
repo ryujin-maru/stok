@@ -38,6 +38,7 @@
 
                     <div class="mb-8 md:flex justify-center">
                         <div class=" bg-white pb-8 px-8 pt-8 mb-8 md:mb-0 md:w-80 md:mr-8">
+                        <div class=" bg-white pb-8 px-8 pt-8 mb-8 sm:mb-0 md:w-80 md:mr-8">
                             <h2 class="text-lg font-bold mb-4">オーダースーツ事業</h2>
                             <p class="pb-4">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p>
 
