@@ -1,3 +1,9 @@
+<style>
+    header {
+        background: white;
+    }
+</style>
+
 <x-layout title="Recruit">
     <x-elements.sub-main title="Greet" enTitle="代表挨拶" />
     <div class="bg-gray-100">
