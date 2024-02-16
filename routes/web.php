@@ -21,6 +21,8 @@ Route::get('/recruit', [IndexController::class,'recruit'])->name('stok.recruit')
 Route::get('/products', [IndexController::class,'products'])->name('stok.products');
 Route::get('/greet', [IndexController::class,'greet'])->name('stok.greet');
 
+Route::get('/sitemap', [App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap');
+
 // Route::get('/company', function () {
 //     return view('stok.company');
 // })->name('stok.company');

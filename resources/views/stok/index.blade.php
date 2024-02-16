@@ -69,7 +69,7 @@
                         <div class="w-10/12 sm:w-8/12 sm text-white mt-8">
                             <h2 class="text-sm">お問い合わせ</h2>
                             <div class="flex justify-between items-center">
-                                <h2 class="font-sub text-xl">Contact</h2>
+                                <p class="font-sub text-xl">Contact</p>
                                 <div class="w-3/4 border-t border-white">
                                 </div>
                             </div>
@@ -84,16 +84,16 @@
 
             <section class="mb-20 sm:pt-20 comp transition-all duration-1000  target">
                 <x-section titleEn="Company" title="会社概要"/>
-                {{-- <p class="mt-8">ここに適当な会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p> --}}
+                {{-- <p class="mt-8">ここに適当な株式会社Stokの会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p> --}}
                 <x-elements.button class="mt-16" href="{{route('stok.company')}}"/>
             </section>
 
             <div class="info sm:flex">
                 <section class="bg-gray-50 pt-10 pb-6 flex justify-center flex-1">
                     <div class="w-10/12 sm:w-8/12">
-                        <div class="自然の中に株式会社ストックのロゴ">
+                        <div class="自然の中に株式会社Stokのロゴ">
                             <h2>採用情報</h2>
-                            <h2 class="font-sub text-xl">Recruit</h2>
+                            <p class="font-sub text-xl">Recruit</p>
                         </div>
                         <div class="mt-5">
                             <img class="w-4/5 mx-auto flex-1 sm:hidden" src="{{asset('images/bother2.jpg')}}" alt="株式会社STOKのイメージ画像">
@@ -107,10 +107,10 @@
                     <div class="w-10/12 sm:w-8/12">
                         <div class="">
                             <h2>新着情報</h2>
-                            <h2 class="font-sub text-xl">Information</h2>
+                            <p class="font-sub text-xl">Information</p>
                             <div class="my-8">
-                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2023年08月27日</span>webサイトを開設しました。</p>
-                                <p class="text-sm border-y border-white py-4"><span class="mr-4">2023年08月26日</span>会社を設立しました。ﾔﾀｰ</p>
+                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2023年01月30日</span>webサイトを開設しました。</p>
+                                <p class="text-sm border-y border-white py-4"><span class="mr-4">2023年01月31日</span>会社を設立しました。</p>
                             </div>
                             {{-- <x-elements.button class="mt-8" href="{{route('stok.recruit')}}"/> --}}
                         </div>

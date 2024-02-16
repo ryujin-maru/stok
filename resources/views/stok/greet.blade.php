@@ -1,19 +1,13 @@
-<style>
-    header {
-        background: white;
-    }
-</style>
-
-<x-layout title="Recruit">
+<x-layout>
     <x-elements.sub-main title="Greet" enTitle="代表挨拶" />
     <div class="bg-gray-100">
-        <img class="w-full object-cover" src="{{asset("images/meet2.jpeg")}}" alt="株式会社STOKのメンバー"/>
+        <img class="w-full object-cover" src="{{asset("images/meet2.jpeg")}}" alt="株式会社Stokのメンバー"/>
         <div class="flex justify-center">
             <div class="bg-gray-100 w-full flex justify-center">
                 <div class="cov w-10/12 bg-white mt-10 flex justify-center mb-8 xl:w-[1000px]">
 
                     <div class="w-11/12  text-left mt-8">
-                        <h2 class="text-xl font-sub">Second Life</h2><br>
+                        <h3 class="text-xl font-sub">Second Life</h3><br>
                         <div class="">
                             <img class="lg:h-[300px] lg:float-right lg:pl-1" src="{{asset("images/shimokawa2.jpeg")}}" alt="下川巧記"/>
                             

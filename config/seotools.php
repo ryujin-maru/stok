@@ -16,11 +16,11 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults'       => [
-            'title'        => false, // set false to total remove
+            'title'        => '', // set false to total remove
             'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
             'description'  => '株式会社STOKは通信事業やイベント事業などを展開するスタートアップ企業です。', // set false to total remove
-            'separator'    => ' - ',
-            'keywords'     => ['Stok','stok','下川巧記','通信事業','イベント事業'],
+            'separator'    => false,
+            'keywords'     => ['株式会社Stok','株式会社stok','Stok','stok','下川巧記','通信事業','イベント事業'],
             'canonical'    => null, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'robots'       => false, // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
         ],
@@ -43,12 +43,12 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'       => 'Stok', // set false to total remove
+            'title'       => null, // set false to total remove
             'description' => '株式会社STOKは通信事業やイベント事業などを展開するスタートアップ企業です。', // set false to total remove
-            'url'         => false, // Set null for using Url::current(), set false to total remove
-            'type'        => false,
-            'site_name'   => false,
-            'images'      => [],
+            'url'         => null, // Set null for using Url::current(), set false to total remove
+            'type'        => "website",
+            'site_name'   => '株式会社Stok',
+            'images'      => ['https://stok.email/images/logo_img.png'],
         ],
     ],
     'twitter' => [
@@ -66,9 +66,11 @@ return [
          */
         'defaults' => [
             'title'       => '株式会社Stok', // set false to total remove
-            'description' => '株式会社STOKは通信事業やイベント事業などを展開するスタートアップ企業です。', // set false to total remove
+            "alternateName" => ["株式会社stok","(株)Stok","(株)stok"],
+            'description' => '株式会社Stokは通信事業やイベント事業などを展開するスタートアップ企業です。', // set false to total remove
             'url'         => null, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
-            'type'        => 'WebPage',
+            'name'        => '株式会社Stok',
+            'type'        => 'WebSite',
             'images'      => [],
         ],
     ],

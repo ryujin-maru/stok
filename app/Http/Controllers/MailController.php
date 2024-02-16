@@ -10,12 +10,12 @@ use Artesaos\SEOTools\Facades\SEOTools;
 class MailController extends Controller
 {
     public function show() {
-        // SEOTools::setTitle('Home');
+        SEOTools::setTitle('お問い合わせ | Stok');
         SEOTools::setDescription('株式会社STOKへの問い合わせを受け付けています。');
-        SEOTools::opengraph()->setUrl('http://current.url.com');
+        SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'articles');
-        SEOTools::jsonLd()->addImage('https://codecasts.com.br/img/logo.jpg');
+        SEOTools::jsonLd()->addImage(asset('logo_img.png'));
         return view('stok.mail');
     }
 
