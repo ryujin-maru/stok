@@ -1,7 +1,7 @@
 
 <header class="w-full fixed top-0 flex justify-between items-center py-4 px-4 z-50 sm:items-end hd">
     <div class="w-28 cursor-pointer sm:ml-8">
-        <img src="{{asset('images/logoname.png')}}" alt="株式会社ストックのロゴ" />
+        <img src="{{asset('images/logoname.png')}}" alt="株式会社Stok" />
     </div>
 
     <div class="w-6 cursor-pointer sm:mr-8 hum sm:hidden">

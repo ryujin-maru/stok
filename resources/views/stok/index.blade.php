@@ -5,7 +5,7 @@
 
         <div class="h-screen relative">
             <div class="absolute bottom-1/3 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60">
-                <h1 class="tracking-widest mb-4 text-xl sm:text-4xl text-shadow">Second Life</h1>
+                <p class="tracking-widest mb-4 text-xl sm:text-4xl text-shadow">Second Life</p>
                 <p class="tracking-wide text-shadow text-xl sm:text-xl">~新たな自分への挑戦~</p>
             </div>
             <div class="scrolldown2 font-sub"><span>scroll</span></div>
@@ -104,13 +104,15 @@
                 </section>
 
                 <section class="bg-gray-100 h-auto pt-10 pb-6 flex justify-center flex-1">
-                    <div class="w-10/12 sm:w-8/12">
+                    <div class="w-10/12 sm:w-10/12">
                         <div class="">
                             <h2>新着情報</h2>
                             <p class="font-sub text-xl">Information</p>
-                            <div class="my-8">
-                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2023年01月30日</span>webサイトを開設しました。</p>
-                                <p class="text-sm border-y border-white py-4"><span class="mr-4">2023年01月31日</span>会社を設立しました。</p>
+                            <div class="my-8 h-[150px] overflow-scroll overflow-x-hidden">
+                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2024年04月01日</span>取締役を１名４月より追加しました。</p>
+                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2024年04月01日</span>事務所の移転、支店を出しました。</p>
+                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2024年01月30日</span>webサイトを開設しました。</p>
+                                <p class="text-sm border-y border-white py-4"><span class="mr-4">2023年01月31日</span>株式会社Stokを設立しました。</p>
                             </div>
                             {{-- <x-elements.button class="mt-8" href="{{route('stok.recruit')}}"/> --}}
                         </div>

@@ -10,8 +10,8 @@ use Artesaos\SEOTools\Facades\SEOTools;
 class MailController extends Controller
 {
     public function show() {
-        SEOTools::setTitle('お問い合わせ | Stok');
-        SEOTools::setDescription('株式会社STOKへの問い合わせを受け付けています。');
+        SEOTools::setTitle('お問い合わせ | 株式会社Stok');
+        SEOTools::setDescription('株式会社STOK(ストック)への問い合わせを受け付けています。');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'articles');
