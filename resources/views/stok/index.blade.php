@@ -5,7 +5,7 @@
 
         <div class="h-screen relative">
             <div class="absolute bottom-1/3 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60">
-                <h1 class="tracking-widest mb-4 text-xl sm:text-4xl text-shadow">Second Life</h1>
+                <p class="tracking-widest mb-4 text-xl sm:text-4xl text-shadow">Second Life</p>
                 <p class="tracking-wide text-shadow text-xl sm:text-xl">~新たな自分への挑戦~</p>
             </div>
             <div class="scrolldown2 font-sub"><span>scroll</span></div>
@@ -69,7 +69,7 @@
                         <div class="w-10/12 sm:w-8/12 sm text-white mt-8">
                             <h2 class="text-sm">お問い合わせ</h2>
                             <div class="flex justify-between items-center">
-                                <h2 class="font-sub text-xl">Contact</h2>
+                                <p class="font-sub text-xl">Contact</p>
                                 <div class="w-3/4 border-t border-white">
                                 </div>
                             </div>
@@ -84,16 +84,16 @@
 
             <section class="mb-20 sm:pt-20 comp transition-all duration-1000  target">
                 <x-section titleEn="Company" title="会社概要"/>
-                {{-- <p class="mt-8">ここに適当な会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p> --}}
+                {{-- <p class="mt-8">ここに適当な株式会社Stokの会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p> --}}
                 <x-elements.button class="mt-16" href="{{route('stok.company')}}"/>
             </section>
 
             <div class="info sm:flex">
                 <section class="bg-gray-50 pt-10 pb-6 flex justify-center flex-1">
                     <div class="w-10/12 sm:w-8/12">
-                        <div class="自然の中に株式会社ストックのロゴ">
+                        <div class="自然の中に株式会社Stokのロゴ">
                             <h2>採用情報</h2>
-                            <h2 class="font-sub text-xl">Recruit</h2>
+                            <p class="font-sub text-xl">Recruit</p>
                         </div>
                         <div class="mt-5">
                             <img class="w-4/5 mx-auto flex-1 sm:hidden" src="{{asset('images/bother2.jpg')}}" alt="株式会社STOKのイメージ画像">
@@ -104,13 +104,15 @@
                 </section>
 
                 <section class="bg-gray-100 h-auto pt-10 pb-6 flex justify-center flex-1">
-                    <div class="w-10/12 sm:w-8/12">
+                    <div class="w-10/12 sm:w-10/12">
                         <div class="">
                             <h2>新着情報</h2>
-                            <h2 class="font-sub text-xl">Information</h2>
-                            <div class="my-8">
-                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2023年08月27日</span>webサイトを開設しました。</p>
-                                <p class="text-sm border-y border-white py-4"><span class="mr-4">2023年08月26日</span>会社を設立しました。ﾔﾀｰ</p>
+                            <p class="font-sub text-xl">Information</p>
+                            <div class="my-8 h-[150px] overflow-scroll overflow-x-hidden">
+                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2024年04月01日</span>取締役を１名４月より追加しました。</p>
+                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2024年04月01日</span>事務所の移転、支店を出しました。</p>
+                                <p class="text-sm border-t border-white py-4"><span class="mr-4">2024年01月30日</span>webサイトを開設しました。</p>
+                                <p class="text-sm border-y border-white py-4"><span class="mr-4">2023年01月31日</span>株式会社Stokを設立しました。</p>
                             </div>
                             {{-- <x-elements.button class="mt-8" href="{{route('stok.recruit')}}"/> --}}
                         </div>

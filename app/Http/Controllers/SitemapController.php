@@ -1,20 +1,19 @@
-<?php  
-namespace App\Console;  
+<?php
 
-use Illuminate\Console\Command;  
-use Spatie\Sitemap\SitemapGenerator;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\DB;
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 
-class GenerateSitemap extends Command  
-{  
-   protected $signature = 'sitemap:generate';  
-   protected $description = 'サイトマップの生成を行う';  
+class SitemapController extends Controller
+{
+    /**
+     * @return \Illuminate\Http\RedirectResponse
+     */
 
-   public function handle()  
-   {  
+    public function index()
+    {
         $sitemap = Sitemap::create();
 
         // Topページ
@@ -53,6 +52,9 @@ class GenerateSitemap extends Command
         ->setChangeFrequency(Url::CHANGE_FREQUENCY_ALWAYS)
         ->setPriority(1.0));
 
-        $sitemap->writeToFile(public_path('sitemap.xml'));
-   }  
+        // xmlを表示
+        return redirect('/sitemap.xml');
+        
+    }
+
 }
