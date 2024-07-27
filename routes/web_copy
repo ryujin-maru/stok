@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\SitemapController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ Route::get('/recruit', [IndexController::class,'recruit'])->name('stok.recruit')
 Route::get('/products', [IndexController::class,'products'])->name('stok.products');
 Route::get('/greet', [IndexController::class,'greet'])->name('stok.greet');
 
-Route::get('/sitemap', [App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap');
+Route::get('/sitemap', [SitemapController::class, 'index'])->name('sitemap');
 
 // Route::get('/company', function () {
 //     return view('stok.company');

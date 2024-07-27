@@ -156,6 +156,12 @@ xl(min-width: 1280px)
     width: 100%;
 }
 
+.main-article h2 {
+    font-size: 22px;
+    border-left: 3px solid rgb(248 113 113 / var(--tw-bg-opacity));
+    padding-left: 6px;
+    margin: 16px 0;
+}
 
 
 @keyframes circlemove{
@@ -193,6 +199,13 @@ xl(min-width: 1280px)
     .sec1 {
         position:initial;
     }
+
+    /* .main-article h2 {
+        font-size: 22px;
+        border-left: 3px solid rgb(248 113 113 / var(--tw-bg-opacity));
+        padding-left: 6px;
+        margin: 20px 0;
+    } */
 }
 
 @media screen and (min-width:1280px) {
