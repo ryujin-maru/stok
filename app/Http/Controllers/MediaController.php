@@ -16,7 +16,7 @@ class MediaController extends Controller
         SEOTools::opengraph()->addProperty('type', 'article');
         SEOTools::jsonLd()->addImage(asset('logo_img.png'));
 
-        return view('media.index');
+        return view('interview.index');
     }
 
     public function detail($id) {
@@ -30,6 +30,6 @@ class MediaController extends Controller
         SEOTools::opengraph()->addProperty('type', 'article');
         SEOTools::jsonLd()->addImage(asset("storage/top/".$article->image));
 
-        return view('media.detail',compact(['article','articles']));
+        return view('interview.detail',compact(['article','articles']));
     }
 }
