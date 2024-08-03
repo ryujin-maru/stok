@@ -41,13 +41,11 @@
                         <div class=" bg-white pb-8 px-8 pt-8 mb-8 sm:mb-0 md:w-80 md:mr-8">
                             <h3 class="text-lg font-bold mb-4">オーダースーツ事業</h3>
                             <p class="pb-4">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p>
-
                         </div>
 
-                        <div class="opacity-0 bg-gray-100 border border-white pb-8 px-8 pt-8 md:w-80 md:ml-8" style="padding-bottom:2rem;">
-                            <h3 class="text-lg font-bold mb-4">ライフラインサポート</h3>
-                            <p class="pb-4">お客様に向け各種ライフラインのサポートを行なっております。
-                                各社と業務提携を行う事で、顧客満足度向上に努めております。</p>
+                        <div class="bg-gray-100 border border-white pb-8 px-8 pt-8 md:w-80 md:ml-8" style="padding-bottom:2rem;">
+                            <h3 class="text-lg font-bold mb-4">Web制作事業</h3>
+                            <p class="pb-4">ホームページ制作やDX推進のためのWebアプリケーション開発を行っております。</p>
                         </div>
 
                     </div>
