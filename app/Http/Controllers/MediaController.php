@@ -9,6 +9,9 @@ use Artesaos\SEOTools\Facades\SEOTools;
 class MediaController extends Controller
 {
     public function index() {
+        $articles = Media::orderBy('created_at','desc')->get();
+
+
         SEOTools::setTitle('記事一覧 | 株式会社Stok');
         SEOTools::setDescription('株式会社Stok(ストック)の記事一覧ページでは、株式会社Stokの最新のニュース、インタビューなどをチェックできます。興味のある記事を見つけて、詳細をお楽しみください。');
         SEOTools::opengraph()->setUrl(url()->current());
@@ -16,11 +19,11 @@ class MediaController extends Controller
         SEOTools::opengraph()->addProperty('type', 'article');
         SEOTools::jsonLd()->addImage(asset('logo_img.png'));
 
-        return view('media.index');
+        return view('interview.index',compact('articles'));
     }
 
     public function detail($id) {
-        $article = Media::where('id',$id)->first();
+        $article = Media::where('id',$id)->firstOrFail();
         $articles = Media::orderBy('created_at','desc')->get();
 
         SEOTools::setTitle( $article->title .' | 株式会社Stok');
@@ -30,6 +33,6 @@ class MediaController extends Controller
         SEOTools::opengraph()->addProperty('type', 'article');
         SEOTools::jsonLd()->addImage(asset("storage/top/".$article->image));
 
-        return view('media.detail',compact(['article','articles']));
+        return view('interview.detail',compact(['article','articles']));
     }
 }

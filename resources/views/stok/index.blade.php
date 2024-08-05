@@ -82,10 +82,53 @@
                 </x-css.back-red>
             </section>
 
-            <section class="mb-20 sm:pt-20 comp transition-all duration-1000  target">
+            <section class="mb-40 sm:pt-20 comp transition-all duration-1000  target">
                 <x-section titleEn="Company" title="会社概要"/>
                 {{-- <p class="mt-8">ここに適当な株式会社Stokの会社概要を書きます。書くことがないから何か文字打ってまーす。英語もかいとこi wana be expensive</p> --}}
                 <x-elements.button class="mt-16" href="{{route('stok.company')}}"/>
+            </section>
+
+            <section class="">
+                <div class="mb-4">
+                    <p class="text-sm text-right">インタビュー</p>
+                    <h3 class="font-sub text-xl text-right">Interview<span class="border-b border-black w-8"></span></h3>
+                    
+                    {{-- <a href="#" class="">
+                        <div class="sub-btn font-sub rounded-xl  border-black text-center ">Detail</div>
+                    </a> --}}
+                </div>
+
+                <div class="swiper infinite-slider relative">
+                    {{-- <div class="background absolute inset-0 z-auto"></div> --}}
+                    <div class="swiper-wrapper">
+                        @foreach ($articles as $item)
+                        <div class="swiper-slide relative">
+                            <a href="{{route('stok.interview.page',['id' => $item->id])}}">
+                                <img src="{{asset('storage/top/'.$item->image)}}" alt="{{$item->alt}}" />
+                                <div class="absolute back-g inset-0 pt-[25%] pl-[5%]">
+                                    <h3 class="text-white text-xl">{{$item->title}}</h3>
+                                    <p class="text-gray-200 mt-8">{{$item->created_at->format('Y-m-d')}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        @endforeach
+
+                        @if(count($articles) < 6)
+                        @foreach ($articles as $item)
+                        <div class="swiper-slide relative">
+                            <a href="{{route('stok.interview.page',['id' => $item->id])}}">
+                                <img src="{{asset('storage/top/'.$item->image)}}" alt="{{$item->alt}}" />
+                                <div class="absolute back-g inset-0 pt-[25%] pl-[5%]">
+                                    <h3 class="text-white text-xl">{{$item->title}}</h3>
+                                    <p class="text-gray-200 mt-8">{{$item->created_at->format('Y-m-d')}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        @endforeach
+                        @endif
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
 
             <div class="info sm:flex">
@@ -120,23 +163,10 @@
                 </section>
             </div>
 
+            
+
         </div>
     </div>
     {{-- <x-footer /> --}}
-<script>
-$(function () {
-  // スクロールを開始したら
-    $(window).on("scroll", function () {
-    // ファーストビューの高さを取得
-    mvHeight = $("#header").height();
-    if ($(window).scrollTop() > mvHeight) {
-      // スクロールの位置がファーストビューより下の場合にclassを付与
-        $(".hd").css('background-color','white');
-    } else {
-      // スクロールの位置がファーストビューより上の場合にclassを外す
-      $(".hd").css('background-color','initial');
-    }
-    });
-});
-</script>
+<x-elements.top-js />
 </x-layout>

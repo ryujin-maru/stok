@@ -4,17 +4,20 @@ namespace App\Http\Controllers;
 
 use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Http\Request;
+use App\Models\Media;
 
 class IndexController extends Controller
 {
     public function home(Request $request) {
+        $articles = Media::orderBy('created_at','desc')->get();
+
         SEOTools::setTitle('株式会社Stok');
         SEOTools::setDescription('株式会社Stok(ストック)は、通信事業やイベント事業など、幅広い分野で展開するスタートアップ企業です。革新的なアプローチと優れたサービスで顧客の期待に応えます。最新の情報やサービスに関する詳細は、株式会社Stokの公式ウェブサイトをご覧ください。');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'website');
         SEOTools::jsonLd()->addImage(asset('images/logo_img.png'));
-        return view('stok.index');
+        return view('stok.index',compact('articles'));
     }
     public function company() {
         SEOTools::setTitle('会社概要 | 株式会社Stok');
