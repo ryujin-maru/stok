@@ -93,37 +93,23 @@
                     <p class="text-sm text-right">インタビュー</p>
                     <h3 class="font-sub text-xl text-right">Interview<span class="border-b border-black w-8"></span></h3>
                     
-                    {{-- <a href="#" class="">
-                        <div class="sub-btn font-sub rounded-xl  border-black text-center ">Detail</div>
-                    </a> --}}
+                    <div class="button006 w-full flex justify-end">
+                        <div class="mr-10">
+                            <a class="font-sub border-b border-gray-300" href="{{route('stok.interview')}}">Detail</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="swiper infinite-slider relative">
                     {{-- <div class="background absolute inset-0 z-auto"></div> --}}
                     <div class="swiper-wrapper">
                         @foreach ($articles as $item)
-                        <div class="swiper-slide relative">
-                            <a href="{{route('stok.interview.page',['id' => $item->id])}}">
-                                <img src="{{asset('storage/top/'.$item->image)}}" alt="{{$item->alt}}" />
-                                <div class="absolute back-g inset-0 pt-[25%] pl-[5%]">
-                                    <h3 class="text-white text-xl">{{$item->title}}</h3>
-                                    <p class="text-gray-200 mt-8">{{$item->created_at->format('Y-m-d')}}</p>
-                                </div>
-                            </a>
-                        </div>
+                        <x-elements.slider-img :item=$item />
                         @endforeach
 
                         @if(count($articles) < 6)
                         @foreach ($articles as $item)
-                        <div class="swiper-slide relative">
-                            <a href="{{route('stok.interview.page',['id' => $item->id])}}">
-                                <img src="{{asset('storage/top/'.$item->image)}}" alt="{{$item->alt}}" />
-                                <div class="absolute back-g inset-0 pt-[25%] pl-[5%]">
-                                    <h3 class="text-white text-xl">{{$item->title}}</h3>
-                                    <p class="text-gray-200 mt-8">{{$item->created_at->format('Y-m-d')}}</p>
-                                </div>
-                            </a>
-                        </div>
+                        <x-elements.slider-img :item=$item />
                         @endforeach
                         @endif
                     </div>
