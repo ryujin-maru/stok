@@ -23,9 +23,12 @@ class MediaController extends Controller
     }
 
     public function detail($id) {
-        $article = Media::where('id',$id)->firstOrFail();
+        $article = Media::where('id',$id)->with(['chat','chat.speaker'])->firstOrFail();
         $articles = Media::orderBy('created_at','desc')->get();
 
+        // foreach($article->chat as $item) {
+        //     dd($item->speaker->image);
+        // }
         SEOTools::setTitle( $article->title .' | 株式会社Stok');
         SEOTools::setDescription($article->description);
         SEOTools::opengraph()->setUrl(url()->current());
