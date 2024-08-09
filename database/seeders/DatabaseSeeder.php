@@ -22,6 +22,8 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call([
             ShopSeeder::class,
+            SpeakerSeeder::class,
+            ChatSeeder::class
         ]);
     }
 }

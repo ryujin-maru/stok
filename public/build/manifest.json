@@ -1,0 +1,24 @@
+{
+  "public/fonts/えり字.otf": {
+    "file": "assets/えり字-65925b1e.otf",
+    "src": "public/fonts/えり字.otf"
+  },
+  "public/images/favicon.png": {
+    "file": "assets/favicon-99f3c7bd.png",
+    "src": "public/images/favicon.png"
+  },
+  "public/images/image0.jpeg": {
+    "file": "assets/image0-54513140.jpeg",
+    "src": "public/images/image0.jpeg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-e11a35e2.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-acf1e967.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
