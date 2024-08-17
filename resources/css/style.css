@@ -387,15 +387,15 @@ width: 65%;
 }
 @media screen and (max-width: 380px){
 .left-icon{
-width: 60px;
-height: 60px;
+width: 70px;
+height: 70px;
 }
 .talk-left{
 width: 65%; 
 }
 .right-icon{
-width: 60px;
-height: 60px;
+width: 70px;
+height: 70px;
 }
 .talk-right{
 width: 65%; 
