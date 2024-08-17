@@ -1,2 +1,3 @@
 User-agent: *
-Disallow:https://www.stok.email/
+Disallow: https://www.stok.email/
+Disallow: /admin

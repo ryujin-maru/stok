@@ -22,7 +22,7 @@
                         @if($chat->count % 2 == 1)
                         <div class="talk-wrap">
                             <div class="left-icon mb-16" style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
-                                <p class="text-center pt-[100%]">{{$chat->speaker->name}}</p>
+                                <p class="text-center pt-[110%] text-xs sm:text-sm">{{$chat->speaker->name}}</p>
                             </div>
                             
                             <div class="talk-left">
@@ -34,7 +34,7 @@
                         <!--右の会話-->
                         <div class="talk-wrap">
                             <div class="right-icon mb-16" style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
-                                <p class="text-center pt-[100%]">{{$chat->speaker->name}}</p>
+                                <p class="text-center pt-[110%] text-xs sm:text-sm">{{$chat->speaker->name}}</p>
                             </div>
                             <div class="talk-right">
                                 <p>{{$chat->text}}</p>

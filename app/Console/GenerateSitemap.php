@@ -1,6 +1,7 @@
 <?php  
-namespace App\Console;  
+namespace App\Console;
 
+use App\Models\Media;
 use Illuminate\Console\Command;  
 use Spatie\Sitemap\SitemapGenerator;
 use Illuminate\Support\Carbon;
@@ -15,6 +16,7 @@ class GenerateSitemap extends Command
 
    public function handle()  
    {  
+        $pages = Media::orderBy('created_at','desc')->get();
         $sitemap = Sitemap::create();
 
         // Topページ
@@ -52,6 +54,14 @@ class GenerateSitemap extends Command
         ->setLastModificationDate(now())
         ->setChangeFrequency(Url::CHANGE_FREQUENCY_ALWAYS)
         ->setPriority(1.0));
+
+        //記事ページ
+        foreach($pages as $page) {
+            $sitemap->add(Url::create('/'.$page->id)
+            ->setLastModificationDate(new Carbon($page->updated_at))
+            ->setChangeFrequency(Url::CHANGE_FREQUENCY_ALWAYS)
+            ->setPriority(0.9));
+        }
 
         $sitemap->writeToFile(public_path('sitemap.xml'));
    }  

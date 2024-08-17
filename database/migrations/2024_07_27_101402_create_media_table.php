@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('title');
             $table->string('image');
             $table->string('alt');
+            $table->integer('type');
+            $table->text('information')->nullable();
             $table->string('description');
             $table->timestamps();
         });
