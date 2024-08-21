@@ -6,7 +6,7 @@
     @foreach($article->chat as $chat)
     @if($chat->count % 2 == 1)
     <div class="talk-wrap">
-        <div class="left-icon md:mb-20 mb-16 " style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
+        <div class="left-icon mb-12 " style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
             <p class="text-center pt-[110%] text-xs sm:text-sm">{{$chat->speaker->name}}</p>
         </div>
         
@@ -18,7 +18,7 @@
     <!--左はここまで-->
     <!--右の会話-->
     <div class="talk-wrap">
-        <div class="right-icon md:mb-20 mb-16" style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
+        <div class="right-icon mb-12" style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
             <p class="text-center pt-[110%] text-xs sm:text-sm">{{$chat->speaker->name}}</p>
         </div>
         <div class="talk-right">
