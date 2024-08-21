@@ -297,7 +297,7 @@ border-radius: 10px;
 width: 70%;
 margin-top:10px;
 box-shadow: 1px 1px 5px #aaa; /*左の会話の影の設定*/
-margin-bottom: 10px;
+margin-bottom: 25px;
 }
 .talk-left:before {
 content: "";
@@ -343,7 +343,7 @@ border-radius: 10px;
 width: 70%;
 margin-top:10px;
 box-shadow: 1px 1px 5px #aaa; /*右の会話の影*/
-margin-bottom:10px;
+margin-bottom:25px;
 }
 .talk-right:before {
 content: "";
