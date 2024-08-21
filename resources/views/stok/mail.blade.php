@@ -55,6 +55,7 @@
                     <p class="text-red-500">{{$message}}</p>
                     @enderror
                 </div>
+                <input type="text" name="hp_field" style="display:none">
             </div>
             <div class="flex justify-center w-full mb-8 mt-4">
                 <input class=" cursor-pointer text-gray-100 bg-black w-3/5 rounded-md py-2 md:py-4" type="submit" name="sub" value="送信">

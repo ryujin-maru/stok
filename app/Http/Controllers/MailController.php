@@ -20,6 +20,10 @@ class MailController extends Controller
     }
 
     public function sendMail(Request $request) {
+        if($request->input('hp_field') !== '') {
+            abort(404);
+        }
+        
         $data = $request->validate([
             'name' => 'required|string|max:20',
             'mail' => 'required|email',

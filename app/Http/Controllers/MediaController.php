@@ -8,8 +8,14 @@ use Artesaos\SEOTools\Facades\SEOTools;
 
 class MediaController extends Controller
 {
-    public function index() {
-        $articles = Media::orderBy('created_at','desc')->get();
+    public function index(Request $request) {
+        if($request->sort == 'interview') {
+            $articles = Media::where('type',1)->orderBy('created_at','desc')->get();
+        }elseif($request->sort == 'report'){
+            $articles = Media::where('type',2)->orderBy('created_at','desc')->get();
+        }else{
+            $articles = Media::orderBy('created_at','desc')->get();
+        }
 
 
         SEOTools::setTitle('記事一覧 | 株式会社Stok');

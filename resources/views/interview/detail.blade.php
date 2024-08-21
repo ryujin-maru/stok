@@ -12,40 +12,9 @@
             <div class="max-w-7xl w-full md:flex justify-between mb-10">
                 <div class="flex-auto bg-white main-article">
                     <div>
-                        <img width="100%" src="{{asset("storage/top/".$article->image)}}" alt="{{$article->alt}}"/>
+                        <img width="100%" src="{{asset("storage/top/".$article->image)}}" class="p-3" alt="{{$article->alt}}"/>
                     </div>
-                    <div class="px-4 my-10 pb-10 leading-9">
-                        {{-- 本文 --}}
-                        {{-- {!! $article->information !!} --}}
-                        <!--左の会話-->
-                        @foreach($article->chat as $chat)
-                        @if($chat->count % 2 == 1)
-                        <div class="talk-wrap">
-                            <div class="left-icon mb-16" style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
-                                <p class="text-center pt-[110%] text-xs sm:text-sm">{{$chat->speaker->name}}</p>
-                            </div>
-                            
-                            <div class="talk-left">
-                                <p>{{$chat->text}}</p>
-                            </div>
-                        </div>
-                        @else
-                        <!--左はここまで-->
-                        <!--右の会話-->
-                        <div class="talk-wrap">
-                            <div class="right-icon mb-16" style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
-                                <p class="text-center pt-[110%] text-xs sm:text-sm">{{$chat->speaker->name}}</p>
-                            </div>
-                            <div class="talk-right">
-                                <p>{{$chat->text}}</p>
-                            </div>
-                        </div>
-                        @endif
-                        <!--右はここまで-->
-                        <!--↓会話部分の最後にこれを必ず付け加えて↓-->
-                        @endforeach
-                        <div class="talk-end"></div>
-                    </div>
+                    <x-elements.chat :article="$article"/>
                 </div>
     
                 <div class="md:min-w-[350px] md:pl-[10px]">
@@ -53,7 +22,11 @@
                         <div class="">
                             <div class="flex justify-between bg-red-400 text-white px-3 py-4">
                                 <h3 class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview')}}'">記事一覧</h3>
-                                <p class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview')}}'">interview</p>
+                                @if($article->type == 1)
+                                    <p class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview',['sort'=>'interview'])}}'">interview</p>
+                                @elseif($article->type == 2)
+                                    <p class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview',['sort'=>'report'])}}'">report</p>
+                                @endif
                             </div>
                             <div>
                                 <ul>
