@@ -4,7 +4,7 @@
         </div>
 
         <div class="h-screen relative">
-            <div class="absolute bottom-1/3 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60">
+            <div class="absolute bottom-1/3 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60 text-white">
                 <p class="tracking-widest mb-4 text-xl sm:text-4xl text-shadow">Second Life</p>
                 <p class="tracking-wide text-shadow text-xl sm:text-xl">~新たな自分への挑戦~</p>
             </div>

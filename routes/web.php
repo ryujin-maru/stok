@@ -31,8 +31,8 @@ Route::as('stok.')->group(function() {
     Route::post('/contact/send',[MailController::class,'sendMail'])->name('send');
     
     // メディアページ関連
-    Route::get('/interview',[MediaController::class,'index'])->name('interview');
-    Route::get('/interview/{id}',[MediaController::class,'detail'])->name('interview.page');
+    Route::get('/media/',[MediaController::class,'index'])->name('interview');
+    Route::get('/media/{id}',[MediaController::class,'detail'])->name('interview.page');
 });
 
 
