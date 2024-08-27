@@ -14,7 +14,7 @@
         });
     });
 
-    window.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("load", () => {
         const infiniteSlider = new Swiper(".infinite-slider", {
             loop: true,
             loopedSlides: 2,

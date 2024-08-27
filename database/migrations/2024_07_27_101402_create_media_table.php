@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('type');
             $table->text('information')->nullable();
             $table->string('description');
+            $table->integer('is_publish')->default(0);
             $table->timestamps();
         });
     }

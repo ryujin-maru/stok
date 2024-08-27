@@ -62,6 +62,7 @@ class MediaController extends Controller
      */
     public function edit($id)
     {
+        // 詳細画面へ
         $article =  Media::where('id',$id)->firstOrFail();
         return view('admin.media.edit',compact('article'));
     }
@@ -75,8 +76,10 @@ class MediaController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         $article =  Media::where('id',$id)->firstOrFail();
 
+        // バリデーション
         $request->validate([
             'title' => ['required','string', 'max:50'],
             'image' => 'image|mimes:jpg,jpeg,png|max:2048',
@@ -84,6 +87,7 @@ class MediaController extends Controller
             'description' => ['string','max:50']
         ]);
 
+        // 画像を保存し、データ登録
         try {
             DB::transaction(function() use($request,$article) {
                 $image = $request->image;
@@ -96,6 +100,7 @@ class MediaController extends Controller
                 $article->alt = $request->alt;
                 $article->description = $request->description;
                 $article->type = $request->type;
+                $article->is_publish = $request->is_publish;
                 $article->save();
             });
         }catch(Throwable $e) {

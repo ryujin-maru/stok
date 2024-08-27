@@ -10,11 +10,11 @@ class MediaController extends Controller
 {
     public function index(Request $request) {
         if($request->sort == 'interview') {
-            $articles = Media::where('type',1)->orderBy('created_at','desc')->get();
+            $articles = Media::where('type',1)->where('is_publish',1)->orderBy('created_at','desc')->get();
         }elseif($request->sort == 'report'){
-            $articles = Media::where('type',2)->orderBy('created_at','desc')->get();
+            $articles = Media::where('type',2)->where('is_publish',1)->orderBy('created_at','desc')->get();
         }else{
-            $articles = Media::orderBy('created_at','desc')->get();
+            $articles = Media::orderBy('created_at','desc')->where('is_publish',1)->get();
         }
 
 
@@ -29,8 +29,8 @@ class MediaController extends Controller
     }
 
     public function detail($id) {
-        $article = Media::where('id',$id)->with(['chat','chat.speaker'])->firstOrFail();
-        $articles = Media::orderBy('created_at','desc')->get();
+        $article = Media::where('id',$id)->where('is_publish',1)->with(['chat','chat.speaker'])->firstOrFail();
+        $articles = Media::orderBy('created_at','desc')->where('is_publish',1)->get();
 
         // foreach($article->chat as $item) {
         //     dd($item->speaker->image);

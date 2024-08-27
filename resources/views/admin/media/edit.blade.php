@@ -21,7 +21,7 @@
                                 @method('PUT')
                                 @csrf
                                 <div class="p-2 w-2/3 m-auto">
-                                    <button onclick="location=href='{{route('media.index')}}'" class="flex text-white bg-green-500 mb-8 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg mt-4">戻る</button>
+                                    <button type="button" onclick="location=href='{{route('media.index')}}'" class="flex text-white bg-green-500 mb-8 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg mt-4">戻る</button>
                                 <div class="relative">
                                     <label for="title" class="font-bold leading-7 text-sm text-gray-600">タイトル</label>
                                     <input value="{{$article->title}}" type="text" id="title" name="title" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
@@ -49,7 +49,18 @@
                                         <input id="type1" type="radio" name="type" class="mr-2" value="1" @if($article->type === 1){ checked } @endif><label for="type1">インタビュー</label>
                                     </div>
                                     <div>
-                                        <input id="type2" class="mr-2" type="radio" name="type" value="0" @if($article->type === 2){ checked } @endif><label for="type2">レポート</label>
+                                        <input id="type2" class="mr-2" type="radio" name="type" value="2" @if($article->type === 2){ checked } @endif><label for="type2">レポート</label>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="p-2 w-2/3 m-auto">
+                                <div class="relative">
+                                    <label class=" font-bold leading-7 text-sm text-gray-600">表示状況</label>
+                                    <div>
+                                        <input id="publish1" type="radio" name="is_publish" class="mr-2" value="0" @if($article->is_publish === 0){ checked } @endif><label for="publish1">非公開</label>
+                                    </div>
+                                    <div>
+                                        <input id="publish2" class="mr-2" type="radio" name="is_publish" value="1" @if($article->is_publish === 1){ checked } @endif><label for="publish2">公開</label>
                                     </div>
                                 </div>
                                 </div>
@@ -60,6 +71,14 @@
                                     <textarea rows="10" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" name="information">{{$article->information}}</textarea>
                                 </div>
                                 </div>
+                                @else
+                                <div class="p-2 w-2/3 m-auto">
+                                    <div class="relative">
+                                        <div>
+                                            <button class="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg mt-4" type="button">チャット編集</button>
+                                        </div>
+                                    </div>
+                                    </div>
                                 @endif
                                 <div class="p-2 w-2/3 m-auto">
                                 <div class="relative">
