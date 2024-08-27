@@ -9,6 +9,7 @@ use Artesaos\SEOTools\Facades\SEOTools;
 
 class MailController extends Controller
 {
+    // お問い合わせ
     public function show() {
         SEOTools::setTitle('お問い合わせ | 株式会社Stok');
         SEOTools::setDescription('株式会社STOK(ストック)への問い合わせを受け付けています。');
