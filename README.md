@@ -16,7 +16,7 @@ git clone -b ブランチ名 https://github.com/ryujin-maru/stok.git
 - npm install
 - npm run dev
 
-.env を作成してファイルを作成
+.envファイルを作成
 
 ## 現在　
 
