@@ -75,7 +75,7 @@
                                 <div class="p-2 w-2/3 m-auto">
                                     <div class="relative">
                                         <div>
-                                            <button class="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg mt-4" type="button">チャット編集</button>
+                                            <button onclick="location.href='{{route('chat.edit',['chat'=>$article->id])}}'" class="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg mt-4" type="button">チャット編集</button>
                                         </div>
                                     </div>
                                     </div>
