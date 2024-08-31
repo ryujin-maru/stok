@@ -22,3 +22,4 @@ git clone -b ブランチ名 https://github.com/ryujin-maru/stok.git
 管理画面から情報を変更できるように修正中です
 
 株式会社Stok様にソースコードの公開の許可をいただいております。
+https://stok.email/

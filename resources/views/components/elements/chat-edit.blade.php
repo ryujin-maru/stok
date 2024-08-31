@@ -4,7 +4,7 @@
     @foreach($articles as $chat)
     @if($chat->count % 2 == 1)
     {{-- <button class="float-right bg-red-400 hover:cursor-pointer hover:bg-red-500 rounded-md px-4 text-white">削除</button> --}}
-    <form method="post" action="{{route('chat.update',['chat'=>$chat->media_id])}}">
+    <form method="post" action="{{route('chat.update',['chat'=>$chat->id])}}">
         @csrf
         @method('PUT')
         <div class="talk-wrap">
@@ -24,15 +24,16 @@
             </div>
         </div>
     </form>
-    <form method="post" action="{{route('chat.destroy',['chat'=>$chat->media_id])}}">
+    {{-- チャット削除 --}}
+    <form id="delete_{{$chat->id}}" method="post" action="{{route('chat.destroy',['chat'=>$chat->id])}}">
         @csrf
         @method('DELETE')
-        <button class="text-md float-right px-1 border border-red-500 leading-none">×</button>
+        <a onClick="deletePost({{$chat->id}})" class="text-md float-right px-1 border border-red-500 leading-none hover:cursor-pointer">×</a>
     </form>
     @else
     <!--左はここまで-->
     <!--右の会話-->
-    <form method="post" action="{{route('chat.update',['chat'=>$chat->media_id])}}">
+    <form method="post" action="{{route('chat.update',['chat'=>$chat->id])}}">
         @csrf
         @method('PUT')
         <div class="talk-wrap">
@@ -54,10 +55,10 @@
             </div>
         </div>
     </form>
-    <form method="post" action="{{route('chat.destroy',['chat'=>$chat->media_id])}}">
+    <form id="delete_{{$chat->id}}" method="post" action="{{route('chat.destroy',['chat'=>$chat->id])}}">
         @csrf
         @method('DELETE')
-        <button class="text-md float-left px-1 border border-red-500 leading-none">×</button>
+        <a onClick="deletePost({{$chat->id}})" class="text-md float-left px-1 border border-red-500 leading-none hover:cursor-pointer">×</a>
     </form>
     @endif
     <!--右はここまで-->
@@ -65,3 +66,12 @@
     @endforeach
     <div class="talk-end"></div>
 </div>
+
+<script>
+    'use strict'
+    function deletePost(key) {
+        if(confirm('本当に削除しますか？')) {
+            document.getElementById('delete_'+key).submit();
+        }
+    }
+</script>

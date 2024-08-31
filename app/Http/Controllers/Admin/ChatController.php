@@ -71,7 +71,17 @@ class ChatController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'count' => ['required'],
+            'text' => ['required','string'],
+        ]);
+
+        $chat = Chat::findOrFail($id);
+        $chat->count = $request->count;
+        $chat->text = $request->text;
+        $chat->save();
+
+        return to_route('chat.edit',['chat'=>$chat->media_id])->with('message','更新しました');
     }
 
     /**
@@ -82,6 +92,10 @@ class ChatController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
+        $chat = Chat::findOrFail($id);
+        $chat->delete();
+
+        return to_route('chat.edit',['chat'=>$chat->media_id])->with(['message'=>'削除しました','status'=>'red']);
     }
 }
