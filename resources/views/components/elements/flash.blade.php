@@ -1,6 +1,6 @@
 @props([
     'status' => 'blue',
-]);
+])
 
 @php
 if($status == 'blue') {

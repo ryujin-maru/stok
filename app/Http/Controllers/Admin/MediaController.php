@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Media;
+use App\Models\Speaker;
 use App\Services\ImageService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -29,7 +30,8 @@ class MediaController extends Controller
      */
     public function create()
     {
-        //
+        // Mediaの新規作成
+        return view('admin.media.create');
     }
 
     /**
@@ -64,7 +66,7 @@ class MediaController extends Controller
     {
         // 詳細画面へ
         $article =  Media::where('id',$id)->firstOrFail();
-        return view('admin.media.edit',compact('article'));
+        return view('admin.media.edit',compact(['article']));
     }
 
     /**
