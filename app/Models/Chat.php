@@ -9,6 +9,13 @@ class Chat extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'media_id',
+        'speaker_id',
+        'count',
+        'text',
+    ];
+
     public function speaker() {
         return $this->belongsTo(Speaker::class);
     }

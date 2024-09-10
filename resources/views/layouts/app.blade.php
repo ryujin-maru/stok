@@ -28,7 +28,7 @@
             @endif
 
             <!-- Page Content -->
-            <main>
+            <main class="font-sub">
                 {{ $slot }}
             </main>
         </div>

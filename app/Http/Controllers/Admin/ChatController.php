@@ -3,14 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Media;
+use App\Models\Chat;
 use App\Models\Speaker;
-use App\Services\ImageService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use Throwable;
 
-class MediaController extends Controller
+class ChatController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,8 +16,7 @@ class MediaController extends Controller
      */
     public function index()
     {
-        $articles = Media::orderBy('created_at','desc')->get();
-        return view('admin.media.index',compact('articles'));
+        //
     }
 
     /**
@@ -30,8 +26,6 @@ class MediaController extends Controller
      */
     public function create()
     {
-        // Mediaの新規作成
-        return view('admin.media.create');
     }
 
     /**
@@ -42,7 +36,23 @@ class MediaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // chatのDBに登録
+        $id = $request->media_id;
+
+        $request->validate([
+            'speaker' => ['required'],
+            'count' => ['required'],
+            'text' => ['required','string','max:200'],
+        ]);
+
+        Chat::create([
+            'media_id' => $id,
+            'speaker_id' => $request->speaker,
+            'count' => $request->count,
+            'text' => $request->text,
+        ]);
+
+        return to_route('chat.edit',['chat'=>$id])->with('message','追加しました');
     }
 
     /**
@@ -65,8 +75,9 @@ class MediaController extends Controller
     public function edit($id)
     {
         // 詳細画面へ
-        $article =  Media::where('id',$id)->firstOrFail();
-        return view('admin.media.edit',compact(['article']));
+        $articles = Chat::where('media_id',$id)->orderBy('count','asc')->get();
+        $speakers = Speaker::get();
+        return view('admin.chat.edit',compact(['articles','speakers','id']));
     }
 
     /**
@@ -78,38 +89,19 @@ class MediaController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-        $article =  Media::where('id',$id)->firstOrFail();
-
         // バリデーション
         $request->validate([
-            'title' => ['required','string', 'max:50'],
-            'image' => 'image|mimes:jpg,jpeg,png|max:2048',
-            'alt' => ['string','max:50'],
-            'description' => ['string','max:50']
+            'count' => ['required'],
+            'text' => ['required','string'],
         ]);
 
-        // 画像を保存し、データ登録
-        try {
-            DB::transaction(function() use($request,$article) {
-                $image = $request->image;
-                if(!is_null($image)) {
-                    $imageName = ImageService::upload($image);
-                    $article->image = $imageName;
-                }
-    
-                $article->title = $request->title;
-                $article->alt = $request->alt;
-                $article->description = $request->description;
-                $article->type = $request->type;
-                $article->is_publish = $request->is_publish;
-                $article->save();
-            });
-        }catch(Throwable $e) {
-            throw $e;
-        }
-        
-        return to_route('media.index')->with('message','更新しました');
+        // 値DBに保存
+        $chat = Chat::findOrFail($id);
+        $chat->count = $request->count;
+        $chat->text = $request->text;
+        $chat->save();
+
+        return to_route('chat.edit',['chat'=>$chat->media_id])->with('message','更新しました');
     }
 
     /**
@@ -120,6 +112,10 @@ class MediaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // 削除
+        $chat = Chat::findOrFail($id);
+        $chat->delete();
+
+        return to_route('chat.edit',['chat'=>$chat->media_id])->with(['message'=>'削除しました','status'=>'red']);
     }
 }
