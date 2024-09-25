@@ -102,6 +102,7 @@ class MediaController extends Controller
                 $article->alt = $request->alt;
                 $article->description = $request->description;
                 $article->type = $request->type;
+                $article->information = $request->information;
                 $article->is_publish = $request->is_publish;
                 $article->save();
             });
