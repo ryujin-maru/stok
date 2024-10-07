@@ -30,7 +30,7 @@
                 </tr> 
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">従業員数<br>(バイト含む)</th>
-                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">取　締　役：２名<br>社　　　員：７名<br>アルバイト：５０名(日雇い含む)</td>
+                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">取　締　役：２名<br>社　　　員：７名<br>アルバイト：２００名(日雇い含む)</td>
                 </tr> 
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">法人番号</th>
@@ -43,6 +43,10 @@
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">顧問税理士</th>
                     <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">西原会計事務所　西原弘仁先生</td>
+                </tr> 
+                <tr class="sm:flex">
+                    <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">所属団体</th>
+                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">守成クラブ</td>
                 </tr> 
             </table>
         </div>

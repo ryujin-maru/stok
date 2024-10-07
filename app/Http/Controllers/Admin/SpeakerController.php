@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Speaker;
+use App\Services\ImageService;
 use Illuminate\Http\Request;
 
 class SpeakerController extends Controller
@@ -14,7 +16,8 @@ class SpeakerController extends Controller
      */
     public function index()
     {
-        //
+        $speakers = Speaker::get();
+        return view('admin.speaker.index',compact('speakers'));
     }
 
     /**
@@ -57,7 +60,8 @@ class SpeakerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $speaker = Speaker::findOrFail($id);
+        return view('admin.speaker.edit',compact('speaker'));
     }
 
     /**
@@ -69,7 +73,20 @@ class SpeakerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'name' => ['required','string', 'max:50'],
+            'image' => 'image|mimes:jpg,jpeg,png|max:2048',
+        ]);
+
+        $speaker = Speaker::findOrFail($id);
+        if(!is_null($request->image)) {
+            $fileName = ImageService::upload($request->image,'speakers');
+            $speaker->image = $fileName;
+        }
+        $speaker->name = $request->name;
+        $speaker->save();
+
+        return to_route('speaker.index')->with('message','更新しました');
     }
 
     /**

@@ -94,7 +94,7 @@ class MediaController extends Controller
             DB::transaction(function() use($request,$article) {
                 $image = $request->image;
                 if(!is_null($image)) {
-                    $imageName = ImageService::upload($image);
+                    $imageName = ImageService::upload($image,'top');
                     $article->image = $imageName;
                 }
     

@@ -7,7 +7,7 @@ use InterventionImage;
 
 Class ImageService 
 {
-    public static function upload($image) 
+    public static function upload($image,$file) 
     {
         // 画像の名前をランダムに作成
         $image_ex = $image->extension();
@@ -16,7 +16,7 @@ Class ImageService
 
         // Storage/topにリサイズし画像をアップロード
         $resize = InterventionImage::make($image)->resize(1920, 1080)->encode();
-        Storage::put('public/top/'.$filename,$resize);
+        Storage::put('public/'. $file .'/'.$filename,$resize);
 
         return $filename;
     }
