@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ChatController;
 use App\Http\Controllers\Admin\MediaController;
+use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\ConfirmablePasswordController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
@@ -60,4 +61,5 @@ Route::prefix('admin')->middleware('auth')->group(function () {
                 ->name('logout');
     Route::resource('media',MediaController::class)->except('show');
     Route::resource('chat',ChatController::class);
+    Route::resource('speaker',SpeakerController::class);
 });

@@ -39,13 +39,13 @@
                     <div class="mb-8 md:flex justify-center">
                         {{-- <div class=" bg-white pb-8 px-8 pt-8 mb-8 md:mb-0 md:w-80 md:mr-8"> --}}
                         <div class=" bg-white pb-8 px-8 pt-8 mb-8 sm:mb-0 md:w-80 md:mr-8">
-                            <h3 class="text-lg font-bold mb-4">オーダースーツ事業</h3>
-                            <p class="pb-4">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p>
-                        </div>
-
-                        <div class="bg-gray-100 border border-white pb-8 px-8 pt-8 md:w-80 md:ml-8" style="padding-bottom:2rem;">
                             <h3 class="text-lg font-bold mb-4">Web制作事業</h3>
                             <p class="pb-4">ホームページ制作やDX推進のためのWebアプリケーション開発を行っております。</p>
+                        </div>
+
+                        <div class="bg-gray-100 pb-8 px-8 pt-8 md:w-80 md:ml-8" style="padding-bottom:2rem;">
+                            {{-- <h3 class="text-lg font-bold mb-4">オーダースーツ事業</h3>
+                            <p class="pb-4">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p> --}}
                         </div>
 
                     </div>

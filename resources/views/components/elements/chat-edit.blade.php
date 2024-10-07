@@ -11,7 +11,7 @@
             <div class="flex justify-center w-24">
                 <button class="bg-blue-400 hover:cursor-pointer hover:bg-blue-500 rounded-md px-4 text-white">編集</button>
             </div>
-            <div class="left-icon mb-12 " style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
+            <div class="left-icon mb-12 " style="background-image: url('{{asset("storage/speakers/".$chat->speaker->image)}}');">
                 <p class="text-center pt-[110%] text-xs sm:text-sm">{{$chat->speaker->name}}</p>
                 <div class="flex justify-center">
                     <input name="count" class="w-3/4 h-6" type="number" value="{{$chat->count}}"/>
@@ -43,7 +43,7 @@
                     {{-- <button class="bg-red-400 hover:cursor-pointer hover:bg-red-500 rounded-md px-4 text-white">削除</button> --}}
                 </div>
             </div>
-            <div class="right-icon mb-12" style="background-image: url('{{asset("storage/top/".$chat->speaker->image)}}');">
+            <div class="right-icon mb-12" style="background-image: url('{{asset("storage/speakers/".$chat->speaker->image)}}');">
                 <p class="text-center pt-[110%] text-xs sm:text-sm">{{$chat->speaker->name}}</p>
                 <div class="flex justify-center">
                     <input name="count" class="w-3/4 h-6" type="number" value="{{$chat->count}}"/>

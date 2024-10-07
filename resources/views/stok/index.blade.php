@@ -42,10 +42,10 @@
                 </div>
 
                 <div class="mt-10 sm:flex items-center">
-                    <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/suit.jpg")}}" alt="黒いスーツを着て時計を見る男性"/>
+                    <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/management.jpg")}}" alt="黒いスーツを着て時計を見る男性"/>
                     <div class="sec1 bg-white top-14 left-10 w-full p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-36 text-center sm:h-auto">
-                        <p class="text-sm pt-4">03.オーダースーツ事業</p>
-                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Order Suit</h3>
+                        <p class="text-sm pt-4">03.イベント運営</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Event Management</h3>
                         {{-- <p class="text-sm text-left">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p> --}}
                     </div>
                 </div>
