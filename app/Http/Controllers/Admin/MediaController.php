@@ -42,7 +42,37 @@ class MediaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // バリデーション
+        $request->validate([
+            'title' => ['required','string', 'max:50'],
+            'image' => 'required|image|mimes:jpg,jpeg,png|max:2048',
+            'alt' => ['string','max:50'],
+            'description' => ['string','max:50']
+        ]);
+
+        // 画像を保存し、データ登録
+        try {
+            DB::transaction(function() use($request) {
+                $image = $request->image;
+                if(!is_null($image)) {
+                    $imageName = ImageService::upload($image,'top');
+                }
+                
+                Media::create([
+                    'title' => $request->title,
+                    'alt' => $request->alt,
+                    'image' => $imageName,
+                    'description' => $request->description,
+                    'type' => $request->type,
+                    'information' => $request->information,
+                    'is_publish' => $request->is_publish,
+                ]);
+            });
+        }catch(Throwable $e) {
+            throw $e;
+        }
+
+        return to_route('media.index')->with('message','登録しました');
     }
 
     /**
