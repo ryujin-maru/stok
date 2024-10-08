@@ -58,7 +58,7 @@ class GenerateSitemap extends Command
         //記事ページ
         foreach($pages as $page) {
             if($page->is_publish == 1) {
-                $sitemap->add(Url::create('/'.$page->id)
+                $sitemap->add(Url::create('/media/'.$page->id)
                 ->setLastModificationDate(new Carbon($page->updated_at))
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_ALWAYS)
                 ->setPriority(0.9));
