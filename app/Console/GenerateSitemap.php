@@ -57,10 +57,12 @@ class GenerateSitemap extends Command
 
         //記事ページ
         foreach($pages as $page) {
-            $sitemap->add(Url::create('/'.$page->id)
-            ->setLastModificationDate(new Carbon($page->updated_at))
-            ->setChangeFrequency(Url::CHANGE_FREQUENCY_ALWAYS)
-            ->setPriority(0.9));
+            if($page->is_publish == 1) {
+                $sitemap->add(Url::create('/'.$page->id)
+                ->setLastModificationDate(new Carbon($page->updated_at))
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_ALWAYS)
+                ->setPriority(0.9));
+            }
         }
 
         $sitemap->writeToFile(public_path('sitemap.xml'));
