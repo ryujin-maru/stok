@@ -12,12 +12,12 @@
     "src": "public/images/image0.jpeg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-a68a9178.css",
+    "file": "assets/app-989a85d2.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.js": {
-    "file": "assets/app-acf1e967.js",
+    "file": "assets/app-c295b1f0.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
