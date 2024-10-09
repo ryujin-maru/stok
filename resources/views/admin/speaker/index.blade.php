@@ -21,7 +21,7 @@
                                 <div class="relative w-36 h-36 mx-auto">
                                     <img class="object-cover rounded-full w-full h-full bg-center" src="{{asset("storage/speakers/".$item->image)}}"/>
                                 </div>
-                                <div class="h-36 p-2">
+                                <div class="h-36 p-2 mt-2 border-t border-gray-200">
                                     <h2 class="pt-3">{{$item->name}}</h2>
                                     <div class="absolute bottom-0">
                                         <p class="pb-2 text-gray-400 text-sm">{{$item->created_at->format('Y-m-d')}}</p>
