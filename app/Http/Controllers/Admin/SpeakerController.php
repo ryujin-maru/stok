@@ -16,7 +16,7 @@ class SpeakerController extends Controller
      */
     public function index()
     {
-        $speakers = Speaker::get();
+        $speakers = Speaker::orderBy('updated_at','DESC')->get();
         return view('admin.speaker.index',compact('speakers'));
     }
 
@@ -27,7 +27,7 @@ class SpeakerController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.speaker.create');
     }
 
     /**
@@ -38,7 +38,21 @@ class SpeakerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => ['required','string', 'max:50'],
+            'image' => 'required|image|mimes:jpg,jpeg,png|max:2048',
+        ]);
+
+        if(!is_null($request->image)) {
+            $fileName = ImageService::upload($request->image,'speakers');
+        }
+
+        Speaker::create([
+            'name' => $request->name,
+            'image' => $fileName,
+        ]);
+
+        return to_route('speaker.index')->with('message','作成しました');
     }
 
     /**
