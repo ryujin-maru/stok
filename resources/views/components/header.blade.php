@@ -4,11 +4,11 @@
         <img src="{{asset('images/logoname.png')}}" alt="株式会社Stok" />
     </div>
 
-    <div class="w-6 cursor-pointer sm:mr-8 hum sm:hidden">
+    <div class="w-6 cursor-pointer sm:mr-8 hum md:hidden">
         <img src="{{asset('icon/menu.png')}}" alt="ハンバーガーメニュー" />
     </div>
 
-    <div class="hidden sm:block">
+    <div class="hidden md:block">
         <div>
             <nav class="w-full flex justify-center">
                 <ul class="font-sub text-black flex nav">
@@ -17,6 +17,7 @@
                     <a href="{{route('stok.greet')}}"><li class="pr-4">代表挨拶</li></a>
                     <a href="{{route('stok.contact')}}"><li class="pr-4">お問い合わせ</li></a>
                     <a href="{{route('stok.company')}}"><li class="pr-4">会社概要</li></a>
+                    <a href="{{route('stok.interview')}}"><li class="pr-4">インタビュー</li></a>
                     <a href="{{route('stok.recruit')}}"><li class="pr-4">採用情報</li></a>
                 </ul>
             </nav>
@@ -35,6 +36,7 @@
             <a href="{{route('stok.greet')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">GREET　　　　--代表挨拶</li></a>
             <a href="{{route('stok.contact')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">CONTACT　　--お問い合わせ</li></a>
             <a href="{{route('stok.company')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--会社概要</li></a>
+            <a href="{{route('stok.interview')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">INTERVIEW　--インタビュー</li></a>
             <a href="{{route('stok.recruit')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--採用情報</li></a>
         </ul>
     </nav>
