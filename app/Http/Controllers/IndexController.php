@@ -28,7 +28,6 @@ class IndexController extends Controller
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'article');
-        SEOTools::jsonLd()->addImage(asset('logo_img.png'));
         return view('stok.company');
     }
 
@@ -39,7 +38,6 @@ class IndexController extends Controller
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'article');
-        SEOTools::jsonLd()->addImage(asset('logo_img.png'));
         return view('stok.recruit');
     }
 
@@ -50,7 +48,6 @@ class IndexController extends Controller
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'article');
-        SEOTools::jsonLd()->addImage(asset('logo_img.png'));
         return view('stok.products');
     }
 
@@ -61,7 +58,6 @@ class IndexController extends Controller
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'article');
-        SEOTools::jsonLd()->addImage(asset('logo_img.png'));
         return view('stok.greet');
     }
 }
