@@ -1,11 +1,11 @@
 <script>
     'use strict';
     // IntersectionObserver
-    const targets = document.querySelectorAll('.target');
+    const targets = document.querySelectorAll('.target, .slide-r ,.slide-l');
     const options = {
         root:null,
         rootMargin:'0px',
-        threshold: '0.8',
+        threshold: 0.8,
     }
     const observer = new IntersectionObserver(intersect,options);
     targets.forEach(target =>  {

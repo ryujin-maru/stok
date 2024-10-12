@@ -17,7 +17,7 @@
                     <x-elements.chat :article="$article"/>
                 </div>
     
-                <div class="md:min-w-[350px] md:pl-[10px]">
+                <div class="md:min-w-[350px] md:px-[10px]">
                     <div class="">
                         <div class="">
                             <div class="flex justify-between bg-red-400 text-white px-3 py-4">

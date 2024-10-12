@@ -20,19 +20,19 @@
             <section>
                 <x-section titleEn="Products" title="事業紹介"/>
 
-                <div class="mt-8 relative sm:flex items-center">
+                <div class="mt-8 relative sm:flex items-center slide-r">
                     <img class="object-cover w-full shadow-md h-36 sm:h-auto sm:w-1/2" src="{{asset("images/audience.jpg")}}" alt="ライブに集まった人々" />
-                    <div class="sec1 w-full bg-white top-14 left-10 p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-36 sm:h-auto text-center">
+                    <div class="sec1 w-full bg-white top-14 left-10 p-5 shadow-md sm:p-4 sm:shadow-none h-36 sm:h-auto text-center">
                         <p class="text-sm pt-4">01.人材サービス</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
                         {{-- <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p> --}}
                     </div>
                 </div>
 
-                <div class="mt-10 sm:flex sm:justify-center items-center">
+                <div class="mt-10 sm:flex sm:justify-center items-center slide-l">
                     <div class="w-full sm:flex sm:flex-row-reverse sm:w-full">
                         <img class="w-full h-36 sm:h-auto object-cover sm:w-1/2" src="{{asset("images/business.jpg")}}" alt="ネットワークを使用してライフラインを形成"/>
-                        <div class="sec1 w-full shadow-md bg-white top-14 right-10  p-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:p-6 sm:shadow-none h-36 text-center sm:h-auto">
+                        <div class="sec1 w-full shadow-md bg-white top-14 right-10  p-4 sm:p-6 sm:shadow-none h-36 text-center sm:h-auto">
                             <p class="text-sm pt-4">02.ライフラインサポート</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Life Line</h3>
                         {{-- <p class="text-sm text-left">お客様に向け各種ライフラインのサポートを行なっております。
@@ -41,9 +41,9 @@
                     </div>
                 </div>
 
-                <div class="mt-10 sm:flex items-center">
+                <div class="mt-10 sm:flex items-center slide-r">
                     <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/management.jpg")}}" alt="黒いスーツを着て時計を見る男性"/>
-                    <div class="sec1 bg-white top-14 left-10 w-full p-5 shadow-md target opacity-0 translate-y-5 transition-all duration-1000 sm:p-4 sm:shadow-none h-36 text-center sm:h-auto">
+                    <div class="sec1 bg-white top-14 left-10 w-full p-5 shadow-md sm:p-4 sm:shadow-none h-36 text-center sm:h-auto">
                         <p class="text-sm pt-4">03.イベント運営</p>
                         <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Event Management</h3>
                         {{-- <p class="text-sm text-left">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p> --}}
