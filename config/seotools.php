@@ -47,7 +47,7 @@ return [
             'description' => '株式会社Stokは通信事業やイベント事業などを展開するスタートアップ企業です。', // set false to total remove
             'url'         => null, // Set null for using Url::current(), set false to total remove
             'type'        => "website",
-            'site_name'   => null,
+            'site_name'   => "株式会社Stok",
             'images'      => ['https://stok.email/images/logo_img.png'],
         ],
     ],

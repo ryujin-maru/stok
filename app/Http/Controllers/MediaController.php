@@ -23,7 +23,6 @@ class MediaController extends Controller
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'article');
-        SEOTools::jsonLd()->addImage(asset('logo_img.png'));
 
         return view('interview.index',compact('articles'));
     }
@@ -40,7 +39,6 @@ class MediaController extends Controller
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'article');
-        SEOTools::jsonLd()->addImage(asset("storage/top/".$article->image));
 
         return view('interview.detail',compact(['article','articles']));
     }
