@@ -25,6 +25,23 @@ xl(min-width: 1280px)
     opacity: 1;
 }
 
+.slide-r {
+    transform: translateX(-30%);
+    opacity: 0;
+    transition: all 0.7s 0.5s ease-out;
+}
+
+.slide-l {
+    transform: translateX(30%);
+    opacity: 0;
+    transition: all 0.7s 0.5s ease-out;
+}
+
+.slide-r.action,.slide-l.action {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 .bstok {
     margin: 0 calc(50% - 50vw);
     position: relative;

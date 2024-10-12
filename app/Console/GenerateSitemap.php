@@ -55,6 +55,12 @@ class GenerateSitemap extends Command
         ->setChangeFrequency(Url::CHANGE_FREQUENCY_ALWAYS)
         ->setPriority(1.0));
 
+        // 記事一覧ページ
+        $sitemap->add(Url::create('/media')
+        ->setLastModificationDate(now())
+        ->setChangeFrequency(Url::CHANGE_FREQUENCY_ALWAYS)
+        ->setPriority(1.0));
+
         //記事ページ
         foreach($pages as $page) {
             if($page->is_publish == 1) {
