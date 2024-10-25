@@ -65,7 +65,7 @@ return [
          * The default configurations to be used by the json-ld generator.
          */
         'defaults' => [
-            'title'       => '株式会社stok(ストック)', // set false to total remove
+            'title'       => '株式会社Stok', // set false to total remove
             "alternateName" => ["株式会社stok","(株)Stok","(株)stok",'株式会社ストック',"人材派遣会社Stok"],
             'description' => '株式会社Stokは通信事業やイベント事業などを展開するスタートアップ企業です。', // set false to total remove
             'url'         => null, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove

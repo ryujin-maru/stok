@@ -22,7 +22,7 @@
                 </tr> 
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">電話番号</th>
-                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">034-500-7894</td>
+                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100"><a href="tel:0345007894" class="text-blue-500">03-4500-7894</a></td>
                 </tr> 
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">資本金</th>
@@ -38,7 +38,7 @@
                 </tr> 
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">顧問社労士</th>
-                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">社会保険労務士 田中邦明事務所　田中邦明先生</td>
+                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">田中邦明事務所　田中邦明先生</td>
                 </tr> 
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">顧問税理士</th>
