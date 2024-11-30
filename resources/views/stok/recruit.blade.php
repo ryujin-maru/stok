@@ -12,8 +12,10 @@
                 </div>
                 <div class="mt-8 border-b border-gray-500 pb-4">
                     <h3 class="font-bold text-xl">給与</h3>
-                    <p class="text-lg mt-3">入社3ヶ月（研修時）20万円</p>
-                    <p class="text-lg mt-3">研修後25万〜</p>
+                    <p class="text-lg mt-3">入社3ヶ月（研修時）</p>
+                    <p class="text-lg mt-3">福岡18万円～,東京21万円～</p>
+                    <p class="text-lg mt-3">研修後</p>
+                    <p class="text-lg mt-3">福岡22万円～,東京25万円～</p>
                 </div>
                 <div class="mt-8 border-b border-gray-500 pb-4">
                     <h3 class="font-bold text-xl">勤務地</h3>
@@ -26,7 +28,7 @@
                 </div>
                 <div class="mt-8 border-b border-gray-500 pb-4">
                     <h3 class="font-bold text-xl">福利厚生</h3>
-                    <p class="text-lg mt-3">社員寮,社会保険</p>
+                    <p class="text-lg mt-3">社員寮,社会保険完備,交通費全額支給</p>
                 </div>
                 <div class="mt-8 border-b border-gray-500 pb-4">
                     <h3 class="font-bold text-xl">職場の雰囲気</h3>
