@@ -21,10 +21,10 @@
                 <x-section titleEn="Products" title="事業紹介"/>
 
                 <div class="mt-8 relative sm:flex items-center slide-r">
-                    <img class="object-cover w-full shadow-md h-36 sm:h-auto sm:w-1/2" src="{{asset("images/audience.jpg")}}" alt="ライブに集まった人々" />
+                    <img class="object-cover w-full shadow-md h-36 sm:h-auto sm:w-1/2" src="{{asset("images/laptop.jpg")}}" alt="営業代行" />
                     <div class="sec1 w-full bg-white top-14 left-10 p-5 shadow-md sm:p-4 sm:shadow-none h-36 sm:h-auto text-center">
-                        <p class="text-sm pt-4">01.人材サービス</p>
-                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Human Resource</h3>
+                        <p class="text-sm pt-4">01.営業代行</p>
+                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Sales Agent</h3>
                         {{-- <p class="text-sm text-left">営業代行、イベント企画、イベント運営等をお手伝いさせて頂いています。</p> --}}
                     </div>
                 </div>
@@ -38,15 +38,6 @@
                         {{-- <p class="text-sm text-left">お客様に向け各種ライフラインのサポートを行なっております。
                             各社と業務提携を行う事で、顧客満足度向上に努めております。</p> --}}
                         </div>
-                    </div>
-                </div>
-
-                <div class="mt-10 sm:flex items-center slide-r">
-                    <img class="w-full h-36 sm:h-auto object-cover shadow-md sm:w-1/2" src="{{asset("images/management.jpg")}}" alt="黒いスーツを着て時計を見る男性"/>
-                    <div class="sec1 bg-white top-14 left-10 w-full p-5 shadow-md sm:p-4 sm:shadow-none h-36 text-center sm:h-auto">
-                        <p class="text-sm pt-4">03.イベント運営</p>
-                        <h3 class="font-black text-2xl mb-2 tracking-wide text-gray-900 mt-2 tt">Event Management</h3>
-                        {{-- <p class="text-sm text-left">初めてのオーダースーツでもしっかりとお客様にあった「かっこいい」を作っております。</p> --}}
                     </div>
                 </div>
 
