@@ -3,7 +3,7 @@
         <x-elements.media-sub/>
     </div>
     <div class="bg-white w-full flex justify-center">
-        <div class="cov md:w-10/12 mt-5  bg-gray-50 flex justify-center mb-8 xl:w-[1000px] p-3 md:p-5 py-10 min-h-[500px]">
+        <div class="cov md:w-10/12 mt-5 rounded-xl  bg-gray-50 flex justify-center mb-8 xl:w-[1000px] p-3 md:p-5 py-10 min-h-[500px]">
             <div class="grid grid-cols-[repeat(2,minmax(165px,1fr))] md:grid-cols-[repeat(3,minmax(200px,1fr))] gap-3">
                 {{-- ここからループ --}}
                 @foreach ($articles as $item)
@@ -28,5 +28,8 @@
                 @endforeach
             </div>
         </div>
+    </div>
+    <div class="mb-8">
+        {{$articles->links()}}
     </div>
 </x-layout>
