@@ -10,11 +10,11 @@ class MediaController extends Controller
 {
     public function index(Request $request) {
         if($request->sort == 'interview') {
-            $articles = Media::where('type',1)->where('is_publish',1)->orderBy('created_at','desc')->get();
+            $articles = Media::where('type',1)->where('is_publish',1)->orderBy('created_at','desc')->paginate(6);
         }elseif($request->sort == 'report'){
-            $articles = Media::where('type',2)->where('is_publish',1)->orderBy('created_at','desc')->get();
+            $articles = Media::where('type',2)->where('is_publish',1)->orderBy('created_at','desc')->paginate(6);
         }else{
-            $articles = Media::orderBy('created_at','desc')->where('is_publish',1)->get();
+            $articles = Media::orderBy('created_at','desc')->where('is_publish',1)->paginate(6);
         }
 
 
