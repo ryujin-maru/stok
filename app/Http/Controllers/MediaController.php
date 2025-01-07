@@ -29,7 +29,7 @@ class MediaController extends Controller
 
     public function detail($id) {
         $article = Media::where('id',$id)->where('is_publish',1)->with(['chat','chat.speaker'])->firstOrFail();
-        $articles = Media::orderBy('created_at','desc')->where('is_publish',1)->get();
+        $articles = Media::orderBy('created_at','desc')->where('is_publish',1)->limit(5)->get();
 
         // foreach($article->chat as $item) {
         //     dd($item->speaker->image);

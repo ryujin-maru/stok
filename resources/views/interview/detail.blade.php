@@ -7,7 +7,7 @@
             <div class="ml-2 my-8">
                 <h1 class="text-3xl text-gray-700">{{$article->title}}</h1>
             </div>
-            <p class="text-gray-500 ml-2">{{$article->updated_at->format('Y-m-d')}}</p>
+            <p class="text-gray-500 ml-2">{{$article->created_at->format('Y-m-d')}}</p>
             {{-- メイン記事 --}}
             <div class="max-w-7xl w-full md:flex justify-between mb-10">
                 <div class="flex-auto bg-white main-article">
@@ -20,14 +20,19 @@
                 <div class="md:min-w-[350px] md:px-[10px]">
                     <div class="">
                         <div class="">
+                            @if($article->type == 1)
                             <div class="flex justify-between bg-red-400 text-white px-3 py-4">
                                 <h3 class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview')}}'">記事一覧</h3>
-                                @if($article->type == 1)
-                                    <p class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview',['sort'=>'interview'])}}'">interview</p>
-                                @elseif($article->type == 2)
-                                    <p class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview',['sort'=>'report'])}}'">report</p>
-                                @endif
+                                <p class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview',['sort'=>'interview'])}}'">interview</p>
                             </div>
+                            @elseif($article->type == 2)
+                            <div class="flex justify-between bg-green-400 text-white px-3 py-4">
+                                <h3 class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview')}}'">記事一覧</h3>
+                                <p class="hover:cursor-pointer" onclick="location.href='{{route('stok.interview',['sort'=>'report'])}}'">report</p>
+                            </div>
+                            @endif
+                            </div>
+
                             <div>
                                 <ul>
                                     {{-- ここからループ --}}
