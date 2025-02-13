@@ -1,5 +1,5 @@
 <x-layout title="Media">
-    <x-elements.sub-main title="Interview" enTitle="インタビュー" />
+    <x-elements.sub-main title="Article" enTitle="記事一覧" />
     <div class="w-full flex justify-center">
         <x-elements.media-sub/>
     </div>

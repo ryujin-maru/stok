@@ -12,13 +12,13 @@
         <div>
             <nav class="w-full flex justify-center">
                 <ul class="font-sub text-black flex nav">
-                    <a href="{{route('stok.index')}}"><li class="pr-4">ホーム</li></a>
-                    <a href="{{route('stok.products')}}"><li class="pr-4">事業紹介</li></a>
-                    <a href="{{route('stok.greet')}}"><li class="pr-4">代表挨拶</li></a>
-                    <a href="{{route('stok.contact')}}"><li class="pr-4">お問い合わせ</li></a>
-                    <a href="{{route('stok.company')}}"><li class="pr-4">会社概要</li></a>
-                    <a href="{{route('stok.interview')}}"><li class="pr-4">インタビュー</li></a>
-                    <a href="{{route('stok.recruit')}}"><li class="pr-4">採用情報</li></a>
+                    <a class="pr-2 hover:opacity-50" href="{{route('stok.index')}}"><li class="pr-2 border-r border-gray-400">ホーム</li></a>
+                    <a class="pr-2 hover:opacity-50" href="{{route('stok.products')}}"><li class="pr-2 border-r border-gray-400">事業紹介</li></a>
+                    <a class="pr-2 hover:opacity-50" href="{{route('stok.greet')}}"><li class="pr-2 border-r border-gray-400">代表挨拶</li></a>
+                    <a class="pr-2 hover:opacity-50" href="{{route('stok.contact')}}"><li class="pr-2 border-r border-gray-400">お問い合わせ</li></a>
+                    <a class="pr-2 hover:opacity-50" href="{{route('stok.company')}}"><li class="pr-2 border-r border-gray-400">会社概要</li></a>
+                    <a class="pr-2 hover:opacity-50" href="{{route('stok.interview')}}"><li class="pr-2 border-r border-gray-400">記事一覧</li></a>
+                    <a class="pr-2 hover:opacity-50" href="{{route('stok.recruit')}}"><li class="pr-2 border-r border-gray-400">採用情報</li></a>
                 </ul>
             </nav>
         </div>
@@ -36,7 +36,7 @@
             <a href="{{route('stok.greet')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">GREET　　　　--代表挨拶</li></a>
             <a href="{{route('stok.contact')}}"><li class="mb-4 opacity-0 translate-x-1.5 transition-all duration-1000">CONTACT　　--お問い合わせ</li></a>
             <a href="{{route('stok.company')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--会社概要</li></a>
-            <a href="{{route('stok.interview')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">INTERVIEW　--インタビュー</li></a>
+            <a href="{{route('stok.interview')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">INTERVIEW　--記事一覧</li></a>
             <a href="{{route('stok.recruit')}}"><li class="mb-6 opacity-0 translate-x-1.5 transition-all duration-1000">COMPANY　　--採用情報</li></a>
         </ul>
     </nav>
