@@ -1,4 +1,5 @@
 <x-layout title="Media">
+    <x-elements.sub-main title="Interview" enTitle="インタビュー" />
     <div class="w-full flex justify-center">
         <x-elements.media-sub/>
     </div>
@@ -32,4 +33,5 @@
     <div class="mb-8">
         {{$articles->links()}}
     </div>
+<x-elements.sub-js />
 </x-layout>

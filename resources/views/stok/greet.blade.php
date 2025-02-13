@@ -37,4 +37,5 @@
             </div>
         </div>
     </div>
+<x-elements.sub-js />
 </x-layout>

@@ -62,4 +62,5 @@
             </div>
         </form>
     </x-fail-layout>
+    <x-elements.sub-js />
 </x-layout>
