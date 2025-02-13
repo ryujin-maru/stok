@@ -81,8 +81,8 @@
 
             <section class="">
                 <div class="mb-4">
-                    <p class="text-sm text-right">インタビュー</p>
-                    <h3 class="font-sub text-xl text-right">Interview<span class="border-b border-black w-8"></span></h3>
+                    <p class="text-sm text-right">記事一覧</p>
+                    <h3 class="font-sub text-xl text-right">Article<span class="border-b border-black w-8"></span></h3>
                     
                     <div class="button006 w-full flex justify-end">
                         <div class="mr-10">
