@@ -50,6 +50,7 @@ class SpeakerController extends Controller
         Speaker::create([
             'name' => $request->name,
             'image' => $fileName,
+            'is_public' => $request->is_public,
         ]);
 
         return to_route('speaker.index')->with('message','作成しました');
@@ -98,6 +99,7 @@ class SpeakerController extends Controller
             $speaker->image = $fileName;
         }
         $speaker->name = $request->name;
+        $speaker->is_public = $request->is_public;
         $speaker->save();
 
         return to_route('speaker.index')->with('message','更新しました');

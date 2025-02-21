@@ -5,7 +5,7 @@
     </div>
 
     <div class="w-6 cursor-pointer sm:mr-8 hum md:hidden">
-        <img src="{{asset('icon/menu.png')}}" alt="ハンバーガーメニュー" />
+        <img src="{{asset('icon/menu.png')}}"/>
     </div>
 
     <div class="hidden md:block">

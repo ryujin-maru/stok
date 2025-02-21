@@ -76,7 +76,7 @@ class ChatController extends Controller
     {
         // 詳細画面へ
         $articles = Chat::where('media_id',$id)->orderBy('count','asc')->get();
-        $speakers = Speaker::orderBy('updated_at','DESC')->get();
+        $speakers = Speaker::where('is_public',1)->orderBy('updated_at','DESC')->get();
         return view('admin.chat.edit',compact(['articles','speakers','id']));
     }
 
