@@ -23,6 +23,12 @@
                                 <input value="{{$speaker->name}}" type="text" id="title" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                             </div>
 
+                            <div class="mt-4 ">
+                                <label for="title" class="font-bold leading-7 text-sm text-gray-600">公開状況</label><br>
+                                <input type="radio" name="is_public" value="1" id="pub" @if($speaker->is_public == 1) checked @endif><label for="pub">公開</label>
+                                <input type="radio" name="is_public" value="0" id="unpub" @if($speaker->is_public == 0) checked @endif><label for="unpub">非公開</label>
+                            </div>
+
                             <div class="mt-10">
                                 <label for="image" class="font-bold leading-7 text-sm text-gray-600">サムネイル</label>
                                 <div>
