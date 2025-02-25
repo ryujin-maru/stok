@@ -29,7 +29,9 @@
                                 今の現状を変えたい、何かをやりたい、ただ行動が出来ない、そんな毎日を過ごしてませんか？<br><br>
                                 
                                 自分を変えたい、誰かの支えになりたいそんな貴方のSecond Lifeのお手伝いをさせて下さい。</p>
-                                <p class="font-bold text-lg text-right mt-5">代表取締役社長　下川巧記</p><br>
+                                <div class="mb-4 mt-1">
+                                    <img class="md:w-[25%] w-[30%] ml-auto" src="{{asset('images/name.JPG')}}">
+                                </div>
                         </div>
                     </div>
                     
