@@ -13,7 +13,7 @@
 
                     <a class="hover:opacity-50" href="{{route('stok.index')}}"><li>ホーム</li></a>
                     <a class="hover:opacity-50" href="{{route('stok.products')}}"><li>事業紹介</li></a>
-                    <a class="hover:opacity-50" href="{{route('stok.greet')}}"><li>代表挨拶</li></a>
+                    <a class="hover:opacity-50" href="{{route('stok.index')}}#greet"><li>代表挨拶</li></a>
                     <a class="hover:opacity-50" href="{{route('stok.contact')}}"><li>お問い合わせ</li></a>
                     <a class="hover:opacity-50" href="{{route('stok.company')}}"><li>会社概要</li></a>
                     <a class="hover:opacity-50" href="{{route('stok.interview')}}"><li>記事一覧</li></a>

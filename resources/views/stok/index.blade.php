@@ -4,11 +4,19 @@
         </div>
 
         <div class="h-screen relative">
-            <div class="absolute bottom-1/3 left-8 pr-4 target opacity-0 translate-y-5 transition-all duration-1000 sm:left-40 xl:left-60 text-white">
-                <p class="tracking-widest mb-4 text-xl sm:text-4xl text-shadow">Second Life</p>
-                <p class="tracking-wide text-shadow text-xl sm:text-xl">~新たな自分への挑戦~</p>
+            <div class="absolute sm:bottom-1/3 bottom-[20%] px-4 py-12 target opacity-0 translate-y-5 transition-all duration-1000 left-2 right-2 xl:left-30 text-white" style="background-color: rgba(0,0,0,0.3);">
+                <p class="tracking-widest mb-4 text-lg sm:text-2xl text-shadow">「一人を救うものは、世界を救う」</p>
+                <p class="tracking-wide text-shadow text-lg sm:text-xl">この理念は、私が人生を通して気づいた、ささやかで確かな真実から生まれました。
+                </p>
+                <p class="tracking-wide text-shadow text-lg sm:text-xl">家族、社員、恋人、友人。
+                大切な人の悩みに寄り添い、力になれたとき、私は本当の幸せを感じます。
+                世界とは、遠くにあるものではなく、身の回りの「一人ひとり」のことなのだと。
+                </p>
+                <p class="tracking-wide text-shadow text-lg sm:text-xl">だからこそ、目の前の誰かを幸せにすることから始めたい。
+                この想いが、Stokの原点です。
+                </p>
             </div>
-            <div class="scrolldown2 font-sub"><span>scroll</span></div>
+            <div class="scrolldown2 font-sub" id="greet"><span>scroll</span></div>
         </div>
     </div>
 
@@ -16,6 +24,33 @@
     <div id="container" class="flex justify-center bg-white">
 
         <div class="w-10/12 sm:w-8/12 mt-14">
+            <section>
+                <x-section titleEn="Greetings" title="代表挨拶"/>
+                <div class="mt-3 sm:mt-6"></div>
+                <img style="margin:0 auto;" class="shadow-xl" src="{{asset('/images/IMG_5975.JPG')}}" alt="株式会社stok代表下川">
+                <p class="mt-3 sm:mt-6 leading-9">
+                    貴方が幸せである事が私の幸せ
+
+                    平素より、Stokをご愛顧いただき、誠にありがとうございます。
+
+                    私は、ご飯を食べること、旅行に行くこと、お酒を飲むこと「楽しい」と思える瞬間を、誰かと一緒に分かち合うのが大好きです。
+                    気づけば、私の幸せの傍にはいつも「誰か」がいてくれました。
+                    一人では感じられない幸せが、誰かと共にあることで本物になる。そんな実感が、今の私をつくっています。<br>
+
+                    私が幸せになるために、あなたを幸せにしたい。
+                    この想いはやがて、Stokの理念である「一人を救う者は、世界を救う」という言葉に形を変えて、会社の原動力となりました。<br>
+
+                    一人の心を満たすこと。
+                    目の前の誰かを本気で幸せにすること。
+                    それは、やがて社会や世界を変えていく力になる。
+                    私たちは本気でそう信じています。<br>
+
+                    Stokは、すべての人が「自分の人生を生きている」と実感できる社会を目指して、これからも事業を通じて挑戦を続けてまいります。
+                </p>
+                <div class="mb-4 mt-1">
+                    <img class="md:w-[25%] w-[30%] ml-auto" src="{{asset('images/name.JPG')}}">
+                </div>
+            </section>
 
             <section>
                 <x-section titleEn="Products" title="事業紹介"/>
@@ -44,7 +79,7 @@
                 <x-elements.button class="mt-20" href="{{route('stok.products')}}"/>
             </section>
 
-            <section>
+            {{-- <section>
                 <x-section titleEn="Greetings" title="代表挨拶"/>
 
                 <div class="mt-4 transition-all duration-1000  target opacity-0 text-center">
@@ -52,7 +87,7 @@
                 </div>
 
                 <x-elements.button class="mt-14" href="{{route('stok.greet')}}"/>
-            </section>
+            </section> --}}
 
             <section class="mb-16 mt-32">
                 <x-css.back-red>

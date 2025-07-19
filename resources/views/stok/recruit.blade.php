@@ -28,7 +28,7 @@
                 </div>
                 <div class="mt-8 border-b border-gray-500 pb-4">
                     <h3 class="font-bold text-xl">福利厚生</h3>
-                    <p class="text-lg mt-3">社員寮,社会保険完備,交通費全額支給</p>
+                    <p class="text-lg mt-3">社員寮、社会保険完備、交通費全額支給、部活動制度、結婚祝金、出産祝い金、セミナー費用補助、副業</p>
                 </div>
                 <div class="mt-8 border-b border-gray-500 pb-4">
                     <h3 class="font-bold text-xl">職場の雰囲気</h3>
