@@ -26,4 +26,22 @@
             },
         });
     });
+
+      document.addEventListener("DOMContentLoaded", () => {
+    const targets = document.querySelectorAll(".fade-up");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target); // 一度だけ発火する
+        }
+      });
+    }, {
+      threshold: 0.4
+    });
+
+    targets.forEach(target => observer.observe(target));
+  });
+
 </script>

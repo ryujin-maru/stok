@@ -28,7 +28,7 @@
                 <x-section titleEn="Greetings" title="代表挨拶"/>
                 <div class="mt-3 sm:mt-6"></div>
                 <img style="margin:0 auto;" class="shadow-xl" src="{{asset('/images/IMG_5975.JPG')}}" alt="株式会社stok代表下川">
-                <p class="mt-3 sm:mt-6 leading-9">
+                <p class="mt-3 sm:mt-6 leading-9 fade-up">
                     貴方が幸せである事が私の幸せ
 
                     平素より、Stokをご愛顧いただき、誠にありがとうございます。
