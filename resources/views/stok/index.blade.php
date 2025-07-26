@@ -5,8 +5,8 @@
 
         <div class="h-screen relative">
             <div class="absolute sm:bottom-1/3 bottom-[20%] px-4 py-12 target opacity-0 translate-y-5 transition-all duration-1000 left-2 right-2 xl:left-30 text-white" style="background-color: rgba(0,0,0,0.3);">
-                <p class="tracking-widest mb-4 text-lg sm:text-xl text-shadow">企業理念</p>
-                <p class="tracking-widest mb-4 text-lg sm:text-2xl text-shadow">「一人を救うものは、世界を救う」</p>
+                <p class="tracking-widest mb-4 text-lg sm:text-xl text-shadow text-center">企業理念</p>
+                <p class="tracking-widest mb-4 text-lg sm:text-2xl text-shadow text-center">「一人を救うものは、世界を救う」</p>
                 <p class="tracking-wide text-shadow text-lg sm:text-xl">この理念は、私が人生を通して気づいた、ささやかで確かな真実から生まれました。
                 </p>
                 <p class="tracking-wide text-shadow text-lg sm:text-xl">家族、社員、恋人、友人。
