@@ -14,7 +14,7 @@
                 </tr> 
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 h-auto sm:border-b border-white">所在地</th>
-                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">本店：〒110-0013 東京都台東区<br>　　　入谷1丁目5番地2号DreamPlace301号室<br><br>支店：〒812-0018 福岡県福岡市博多区<br>　　　住吉2-16-14-1F</td>
+                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">本店：〒110-0013 東京都台東区<br>　　　入谷1丁目5番地2号DreamPlace301号室<br><br>支店：〒812-0011 福岡県福岡市博多区<br>　　　博多駅前3丁目18番地8号ブルク博多駅前506号室</td>
                 </tr> 
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">代表</th>
@@ -46,7 +46,7 @@
                 </tr> 
                 <tr class="sm:flex">
                     <th class="text-sm w-full sm:w-[20%] block sm:inline-block bg-gray-200 p-5 sm:p-8 sm:border-b border-white">所属団体</th>
-                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">守成クラブ<br>一般社団法人日本スピーカー協会</td>
+                    <td class="w-full sm:w-[80%] block sm:inline-block bg-white p-5 sm:p-8 sm:border-b border-gray-100">守成クラブ<br>JPSA(一般社団法人日本プロスピーカー協会)</td>
                     </tr> 
             </table>
         </div>
